@@ -1,20 +1,18 @@
 package org.example.model;
 
+
+// need to include annotation here--data? component?
 public class User {
 
     private int userId;
-    private String firstName;
-    private String lastName;
-    private String fullName;
+    private String name;
     private String phoneNumber;
 
     public User() {}
 
-    public User(int userId, String firstName, String lastName, String phoneNumber) {
+    public User(int userId, String name, String phoneNumber) {
         this.userId = userId;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.fullName = firstName + " " + lastName;
+        this.name = name;
         this.phoneNumber = phoneNumber;
     }
 }
