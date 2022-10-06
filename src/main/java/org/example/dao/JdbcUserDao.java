@@ -17,7 +17,7 @@ public class JdbcUserDao implements UserDao {
     }
 
     @Override
-    List<User> getAllUsers() {
+    public List<User> getAllUsers() {
         List<User> users = new ArrayList<>();
         String sql = "SELECT name, phone_number FROM users";
 
@@ -31,7 +31,7 @@ public class JdbcUserDao implements UserDao {
 
     //This method gets all users by search query ascending but does not paginate.
     @Override
-    List<User> getUsersByNameAscending(String searchQuery) {
+    public List<User> getUsersByNameAscending(String searchQuery) {
         List<User> users = new ArrayList<>();
         String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name ASC";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
@@ -44,7 +44,7 @@ public class JdbcUserDao implements UserDao {
 
     //This method gets all users by search query descending but does not paginate.
     @Override
-    List<User> getUsersByNameDescending(String searchQuery) {
+    public List<User> getUsersByNameDescending(String searchQuery) {
         List<User> users = new ArrayList<>();
         String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name DESC";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
@@ -56,7 +56,7 @@ public class JdbcUserDao implements UserDao {
     }
 
     @Override
-    List<List<User>> getUsersByNameAscendingPaginated(String searchQuery, int usersPerPage) {
+    public List<List<User>> getUsersByNameAscendingPaginated(String searchQuery, int usersPerPage) {
         //making a note here: sql "LIKE '%value1%' contains value1
         List<List<User>> usersAscending = new ArrayList<>();
         String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name ASC";
@@ -64,11 +64,16 @@ public class JdbcUserDao implements UserDao {
         if (results.next()) {
 
         }
+
+        return usersAscending;
     }
 
     @Override
-    List<List<User>> getUsersByNameDescendingPaginated(String searchQuery, int usersPerPage) {
+    public List<List<User>> getUsersByNameDescendingPaginated(String searchQuery, int usersPerPage) {
         //making a note here: sql "LIKE '%value1%' contains value1
+        List<List<User>> usersDescending = new ArrayList<>();
+
+        return usersDescending;
     }
 
     private User mapRowToUser(SqlRowSet rowSet) {
