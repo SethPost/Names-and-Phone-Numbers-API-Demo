@@ -8,7 +8,11 @@ public interface UserDao {
 
     List<User> getAllUsers();
 
-    List<List<User>> getUsersByNameAscending(String searchQuery, int usersPerPage);
+    List<User> getUsersByNameAscending(String searchQuery);
 
-    List<List<User>> getUsersByNameDescending(String searchQuery, int usersPerPage);
+    List<User> getUsersByNameDescending(String searchQuery);
+
+    List<List<User>> getUsersByNameAscendingPaginated(String searchQuery, int usersPerPage);
+
+    List<List<User>> getUsersByNameDescendingPaginated(String searchQuery, int usersPerPage);
 }

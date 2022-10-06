@@ -26,8 +26,49 @@ public class JdbcUserDao implements UserDao {
             User user = mapRowToUser(results);
             users.add(user);
         }
-
         return users;
+    }
+
+    //This method gets all users by search query ascending but does not paginate.
+    @Override
+    List<User> getUsersByNameAscending(String searchQuery) {
+        List<User> users = new ArrayList<>();
+        String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name ASC";
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
+        while (results.next()) {
+            User user = mapRowToUser(results);
+            users.add(user);
+        }
+        return users;
+    }
+
+    //This method gets all users by search query descending but does not paginate.
+    @Override
+    List<User> getUsersByNameDescending(String searchQuery) {
+        List<User> users = new ArrayList<>();
+        String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name DESC";
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
+        while (results.next()) {
+            User user = mapRowToUser(results);
+            users.add(user);
+        }
+        return users;
+    }
+
+    @Override
+    List<List<User>> getUsersByNameAscendingPaginated(String searchQuery, int usersPerPage) {
+        //making a note here: sql "LIKE '%value1%' contains value1
+        List<List<User>> usersAscending = new ArrayList<>();
+        String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name ASC";
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
+        if (results.next()) {
+
+        }
+    }
+
+    @Override
+    List<List<User>> getUsersByNameDescendingPaginated(String searchQuery, int usersPerPage) {
+        //making a note here: sql "LIKE '%value1%' contains value1
     }
 
     private User mapRowToUser(SqlRowSet rowSet) {
