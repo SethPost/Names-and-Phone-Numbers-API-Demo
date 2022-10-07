@@ -22,7 +22,7 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication) {
-        List<User> users = new ArrayList<>();
+        List<User> users = userDao.getAllUsers();
         if (searchQuery != null && sortIndication != null) {
             if (sortIndication.equals("Alphabetical")) {
                 users = userDao.getUsersByNameAscending(searchQuery);
@@ -31,8 +31,14 @@ public class UserController {
             }
         } else if (searchQuery!= null) {
             users = userDao.getUsersByName(searchQuery);
-        } else {
-            users = userDao.getAllUsers();
+        } else if (sortIndication != null) {
+            if (sortIndication.equals("Alphabetical")) {
+                users = userDao.getAllUsersAscending();
+            } else if (sortIndication.equals("Reverse Alphabetical")) {
+                users = userDao.getAllUsersDescending();
+            } else {
+                users = userDao.getAllUsers();
+            }
         }
         return users;
     }

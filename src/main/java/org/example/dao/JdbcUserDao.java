@@ -30,6 +30,32 @@ public class JdbcUserDao implements UserDao {
     }
 
     @Override
+    public List<User> getAllUsersAscending() {
+        List<User> users = new ArrayList<>();
+        String sql = "Select * FROM users ORDER BY name ASC";
+
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+        while (results.next()) {
+            User user = mapRowToUser(results);
+            users.add(user);
+        }
+        return users;
+    }
+
+    @Override
+    public List<User> getAllUsersDescending() {
+        List<User> users = new ArrayList<>();
+        String sql = "Select * FROM users ORDER BY name DESC";
+
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+        while (results.next()) {
+            User user = mapRowToUser(results);
+            users.add(user);
+        }
+        return users;
+    }
+
+    @Override
     public List<User> getUsersByName(String searchQuery) {
         List<User> users = new ArrayList<>();
         String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%'";
