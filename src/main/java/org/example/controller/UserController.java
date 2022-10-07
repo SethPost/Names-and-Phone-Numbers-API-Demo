@@ -20,12 +20,7 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public List<User> getAllUsers() {
-        return userDao.getAllUsers();
-    }
-
-    @GetMapping("/users2")
-    public List<User> getUsersByNameAscending(@RequestParam String searchQuery) {
+    public List<User> getUsers(@RequestParam(required = false) String searchQuery) {
         if (searchQuery != null) {
             return userDao.getUsersByNameAscending(searchQuery);
         } else {
