@@ -3,10 +3,7 @@ package org.example.controller;
 import org.example.dao.UserDao;
 import org.example.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -27,9 +24,13 @@ public class UserController {
         return userDao.getAllUsers();
     }
 
-    @GetMapping("/users-ascending/?q={searchQuery}")
-    public List<User> getUsersByNameAscending(@PathVariable String searchQuery) {
-        return userDao.getUsersByNameAscending(searchQuery);
+    @GetMapping("/users2")
+    public List<User> getUsersByNameAscending(@RequestParam String searchQuery) {
+        if (searchQuery != null) {
+            return userDao.getUsersByNameAscending(searchQuery);
+        } else {
+            return userDao.getAllUsers();
+        }
     }
 
     @GetMapping("/users-descending/?q={searchQuery}")

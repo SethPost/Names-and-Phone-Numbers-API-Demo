@@ -33,8 +33,8 @@ public class JdbcUserDao implements UserDao {
     @Override
     public List<User> getUsersByNameAscending(String searchQuery) {
         List<User> users = new ArrayList<>();
-        String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name ASC";
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
+        String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%' ORDER BY name ASC";
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             User user = mapRowToUser(results);
             users.add(user);
@@ -46,7 +46,7 @@ public class JdbcUserDao implements UserDao {
     @Override
     public List<User> getUsersByNameDescending(String searchQuery) {
         List<User> users = new ArrayList<>();
-        String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name DESC";
+        String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%' ORDER BY name DESC";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
         while (results.next()) {
             User user = mapRowToUser(results);
@@ -59,7 +59,7 @@ public class JdbcUserDao implements UserDao {
     public List<List<User>> getUsersByNameAscendingPaginated(String searchQuery, int usersPerPage) {
         //making a note here: sql "LIKE '%value1%' contains value1
         List<List<User>> usersAscending = new ArrayList<>();
-        String sql = "SELECT name, phone_number FROM users WHERE name LIKE '%?%' ORDER BY name ASC";
+        String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%' ORDER BY name ASC";
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
         if (results.next()) {
 
