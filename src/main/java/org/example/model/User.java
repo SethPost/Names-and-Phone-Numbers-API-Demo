@@ -1,7 +1,7 @@
 package org.example.model;
 
 
-// need to include annotation here--data? component?
+
 public class User {
 
     private int userId;
