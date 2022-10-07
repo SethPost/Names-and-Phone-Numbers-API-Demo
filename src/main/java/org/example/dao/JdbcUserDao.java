@@ -67,7 +67,7 @@ public class JdbcUserDao implements UserDao {
         return users;
     }
 
-    //This method gets all users by search query ascending but does not paginate.
+    //This method gets users by search query ascending but does not paginate.
     @Override
     public List<User> getUsersByNameAscending(String searchQuery) {
         List<User> users = new ArrayList<>();
@@ -80,7 +80,7 @@ public class JdbcUserDao implements UserDao {
         return users;
     }
 
-    //This method gets all users by search query descending but does not paginate.
+    //This method gets users by search query descending but does not paginate.
     @Override
     public List<User> getUsersByNameDescending(String searchQuery) {
         List<User> users = new ArrayList<>();

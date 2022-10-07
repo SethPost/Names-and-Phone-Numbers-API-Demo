@@ -21,7 +21,8 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication) {
+    public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication,
+                                @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) {
         List<User> users = userDao.getAllUsers();
         if (searchQuery != null && sortIndication != null) {
             if (sortIndication.equals("Alphabetical")) {
@@ -41,11 +42,6 @@ public class UserController {
             }
         }
         return users;
-    }
-
-    @GetMapping("/users-descending/?q={searchQuery}")
-    public List<User> getUsersByNameDescending(@PathVariable String searchQuery) {
-        return userDao.getUsersByNameDescending(searchQuery);
     }
 
     @GetMapping("/users-ascending-paginated/?q={searchQuery}&n={usersPerPage}")
