@@ -29,6 +29,18 @@ public class JdbcUserDao implements UserDao {
         return users;
     }
 
+    @Override
+    public List<User> getUsersByName(String searchQuery) {
+        List<User> users = new ArrayList<>();
+        String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%'";
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+        while (results.next()) {
+            User user = mapRowToUser(results);
+            users.add(user);
+        }
+        return users;
+    }
+
     //This method gets all users by search query ascending but does not paginate.
     @Override
     public List<User> getUsersByNameAscending(String searchQuery) {
@@ -47,7 +59,7 @@ public class JdbcUserDao implements UserDao {
     public List<User> getUsersByNameDescending(String searchQuery) {
         List<User> users = new ArrayList<>();
         String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%' ORDER BY name DESC";
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             User user = mapRowToUser(results);
             users.add(user);

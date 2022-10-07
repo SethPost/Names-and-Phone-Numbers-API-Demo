@@ -5,6 +5,7 @@ import org.example.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin
@@ -20,12 +21,20 @@ public class UserController {
     }
 
     @GetMapping("/users")
-    public List<User> getUsers(@RequestParam(required = false) String searchQuery) {
-        if (searchQuery != null) {
-            return userDao.getUsersByNameAscending(searchQuery);
+    public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication) {
+        List<User> users = new ArrayList<>();
+        if (searchQuery != null && sortIndication != null) {
+            if (sortIndication.equals("Alphabetical")) {
+                users = userDao.getUsersByNameAscending(searchQuery);
+            } else if (sortIndication.equals("Reverse Alphabetical")) {
+                users = userDao.getUsersByNameDescending(searchQuery);
+            }
+        } else if (searchQuery!= null) {
+            users = userDao.getUsersByName(searchQuery);
         } else {
-            return userDao.getAllUsers();
+            users = userDao.getAllUsers();
         }
+        return users;
     }
 
     @GetMapping("/users-descending/?q={searchQuery}")
