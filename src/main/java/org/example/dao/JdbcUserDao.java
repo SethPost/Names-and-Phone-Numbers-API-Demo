@@ -93,25 +93,24 @@ public class JdbcUserDao implements UserDao {
         return users;
     }
 
+    //This method takes a list and paginates it by the number of users per page provided.
     @Override
-    public List<List<User>> getUsersByNameAscendingPaginated(String searchQuery, int usersPerPage) {
-        //making a note here: sql "LIKE '%value1%' contains value1
-        List<List<User>> usersAscending = new ArrayList<>();
-        String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%' ORDER BY name ASC";
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql, searchQuery);
-        if (results.next()) {
-
+    public List<List<User>> paginateResults(List<User> users, int pageSize) {
+        List<List<User>> pages = new ArrayList<>();
+        for (int i = 0; i < users.size(); i += pageSize) {
+            List<User> pageOfUsers = new ArrayList<>();
+            for (int j = i; (j < i + pageSize) && (j < users.size()); j++) {
+                pageOfUsers.add(users.get(j));
+            }
+            pages.add(pageOfUsers);
         }
-
-        return usersAscending;
+        return pages;
     }
 
+    //This method takes a list of pages and returns the specified one.
     @Override
-    public List<List<User>> getUsersByNameDescendingPaginated(String searchQuery, int usersPerPage) {
-        //making a note here: sql "LIKE '%value1%' contains value1
-        List<List<User>> usersDescending = new ArrayList<>();
-
-        return usersDescending;
+    public List<User> getPage(List<List<User>> users, int pageNumber) {
+        return users.get(pageNumber - 1);
     }
 
     private User mapRowToUser(SqlRowSet rowSet) {

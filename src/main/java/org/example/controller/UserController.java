@@ -5,6 +5,7 @@ import org.example.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,7 +23,8 @@ public class UserController {
 
     @GetMapping("/users")
     public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication,
-                                @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) {
+                               @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) {
+        List<List<User>> pages = new ArrayList<>();
         List<User> users = userDao.getAllUsers();
         if (searchQuery != null && sortIndication != null) {
             if (sortIndication.equals("Alphabetical")) {
@@ -37,21 +39,9 @@ public class UserController {
                 users = userDao.getAllUsersAscending();
             } else if (sortIndication.equals("Reverse Alphabetical")) {
                 users = userDao.getAllUsersDescending();
-            } else {
-                users = userDao.getAllUsers();
             }
         }
-        return users;
+        pages = userDao.paginateResults(users, pageSize);
+        return userDao.getPage(pages, pageNumber);
     }
-
-    @GetMapping("/users-ascending-paginated/?q={searchQuery}&n={usersPerPage}")
-    public List<List<User>> getUsersByNameAscendingPaginated(@PathVariable String searchQuery, @PathVariable int usersPerPage) {
-        return userDao.getUsersByNameAscendingPaginated(searchQuery, usersPerPage);
-    }
-
-    @GetMapping("/users-descending-paginated/?q={searchQuery}&n={usersPerPage}")
-    public List<List<User>> getUsersByNameDescendingPaginated(@PathVariable String searchQuery, @PathVariable int usersPerPage) {
-        return userDao.getUsersByNameDescendingPaginated(searchQuery, usersPerPage);
-    }
-
 }
