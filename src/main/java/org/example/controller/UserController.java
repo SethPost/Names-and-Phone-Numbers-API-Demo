@@ -24,8 +24,13 @@ public class UserController {
     @GetMapping("/users")
     public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication,
                                @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) {
+        // Start by declaring a new list of lists that will be used to pull a single page from.
             List<List<User>> pages = new ArrayList<>();
+
+        // Get a list of all users that we will then filter out by request params.
             List<User> users = userDao.getAllUsers();
+
+        // Filtering out by both searchQuery and sortIndication
             if (searchQuery != null && sortIndication != null) {
                 if (sortIndication.equals("Alphabetical")) {
                     users = userDao.getUsersByNameAscending(searchQuery);
@@ -34,8 +39,12 @@ public class UserController {
                 } else {
                     users = userDao.getUsersByName(searchQuery);
                 }
+
+        // Filtering out by searchQuery only (sortIndication is null)
             } else if (searchQuery != null) {
                 users = userDao.getUsersByName(searchQuery);
+
+        // Filtering out by sortIndication only, no searchQuery
             } else if (sortIndication != null) {
                 if (sortIndication.equals("Alphabetical")) {
                     users = userDao.getAllUsersAscending();
@@ -43,12 +52,20 @@ public class UserController {
                     users = userDao.getAllUsersDescending();
                 }
             }
+
+        // Checking that our resulting list is not empty. If not, the list is paginated by the pageSize indicated.
             if (users.size() != 0) {
                 pages = userDao.paginateResults(users, pageSize);
+
+            // Checking that the pageNumber requested exists in our paginated list.
                 if (pageNumber > pages.size()) {
                     throw new RuntimeException("There are not that many pages of results. Please select a lower number.");
                 }
+
+            // Returning the specific page requested from our paginated list of results.
                 return userDao.getPage(pages, pageNumber);
+
+            // Returns an empty list. Avoids IndexOutOfBoundsException.
             } else {
                 return users;
             }
