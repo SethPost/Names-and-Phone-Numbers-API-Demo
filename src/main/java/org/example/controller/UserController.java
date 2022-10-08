@@ -31,6 +31,8 @@ public class UserController {
                 users = userDao.getUsersByNameAscending(searchQuery);
             } else if (sortIndication.equals("Reverse Alphabetical")) {
                 users = userDao.getUsersByNameDescending(searchQuery);
+            } else {
+                users = userDao.getUsersByName(searchQuery);
             }
         } else if (searchQuery!= null) {
             users = userDao.getUsersByName(searchQuery);

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OCLC Interview API Project Demo</title>
+    </head>
+    <body>
+        <h1>OCLC Interview API Project Demo</h1>
+        <form action="http://localhost:8080/users" method="GET">
+
+            <label for="searchQuery">Search by name (case-sensitive): </label>
+            <input name="searchQuery" type=""text" maxlength="50" placeholder="Name to search"/>
+
+            <br/>
+
+            <p>How do you want the results to be sorted?</p>
+
+            <input name="sortIndication" type="radio" value="Entry Number" id="Entry Number"/>
+            <label for="Entry Number">Entry Number (Ascending)</label>
+
+            <input name="sortIndication" type="radio" value="Alphabetical" id="Alphabetical"/>
+            <label for="Alphabetical">Alphabetical (by name)</label>
+
+            <input name="sortIndication" type="radio" value="Reverse Alphabetical" id="Reverse Alphabetical"/>
+            <label for="Reverse Alphabetical">Reverse Alphabetical (by name)</label>
+
+            <br/>
+            <br/>
+
+            <label for="pageSize">Number of results per page: </label>
+            <input name="pageSize" type="number" min="1" max="50"/>
+
+            <br/>
+            <br/>
+            
+            <label for="pageNumber">Page number of results you would like to view: </label>
+            <input name="pageNumber" type="number" min="1" max="5"/>
+
+            <br/>
+            <br/>
+
+            <input type="submit" />
+        </form>
+    </body>
+</html>
