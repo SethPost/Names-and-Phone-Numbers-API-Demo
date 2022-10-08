@@ -59,11 +59,11 @@ public class JdbcUserDao implements UserDao {
     public List<User> getUsersByName(String searchQuery) {
         List<User> users = new ArrayList<>();
         String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%'";
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-        while (results.next()) {
-            User user = mapRowToUser(results);
-            users.add(user);
-        }
+            SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+            while (results.next()) {
+                User user = mapRowToUser(results);
+                users.add(user);
+            }
         return users;
     }
 

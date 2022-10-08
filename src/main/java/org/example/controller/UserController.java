@@ -43,7 +43,11 @@ public class UserController {
                 users = userDao.getAllUsersDescending();
             }
         }
-        pages = userDao.paginateResults(users, pageSize);
-        return userDao.getPage(pages, pageNumber);
+        if (users.size() != 0) {
+            pages = userDao.paginateResults(users, pageSize);
+            return userDao.getPage(pages, pageNumber);
+        } else {
+            return users;
+        }
     }
 }
