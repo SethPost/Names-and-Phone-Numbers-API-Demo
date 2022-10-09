@@ -5,10 +5,12 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OCLC Interview API Project Demo</title>
+        <script src="./node_modules/axios/dist/axios.min.js"></script>
+        <script src="index.js"></script>
     </head>
     <body>
         <h1>OCLC Interview API Project Demo</h1>
-        <form action="http://localhost:8080/users" method="GET">
+        <form name="search-parameters">
 
             <label for="searchQuery">Search by name (case-sensitive): </label>
             <input name="searchQuery" type=""text" maxlength="50" placeholder="Name to search"/>
@@ -41,7 +43,9 @@
             <br/>
             <br/>
 
-            <input type="submit" />
+            <button id="search-button">Search</button>
         </form>
+        <div id="users" class="user-list">
+        </div>
     </body>
 </html>
