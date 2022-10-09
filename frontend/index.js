@@ -1,4 +1,5 @@
-import axios from "axios";
+// import axios from "axios";
+
 
 const tableName = "Search Results";
 const userIdCellText = "User ID";
@@ -6,49 +7,34 @@ const nameCellText = "Name";
 const phoneNumberCellText = "Phone Number";
 const userList = document.getElementById('users');
 const searchButton = document.getElementById('search-button');
-let users = [
-    {
-        userId: 1,
-        name: 'Seth Post',
-        phoneNumber: '3308073006'
-    }
-];
+let users = [];
 
-function loadUsers() {
-    axios.get('http://localhost:8080/users').then(
-        (response) => {
-            this.users = response.data;
+function init() {
+    users = [
+        {
+            userId: 1,
+            name: 'Seth Post',
+            phoneNumber: '3308073006'
+        },
+        {
+            userId: 2,
+            name: 'Test Name',
+            phoneNumber: '1234567890'
         }
-    )
+    ];
 }
 
+// function loadUsers() {
+//     axios.get('http://localhost:8080/users').then(
+//         (response) => {
+//             this.users = response.data;
+//         }
+//     )
+// }
+
 function displaySearchResults() {
-    const heading = document.createElement('h2');
-    heading.innerText = tableName;
-    userList.appendChild(heading);
 
-
-    const table = document.createElement('table');
-    userList.appendChild(table);
-
-    const tableHead = document.createElement('thead');
-    table.appendChild(tableHead);
-
-    const tableRow = document.createElement('trow');
-    tableHead.appendChild(tableRow);
-
-    const userIdCell = document.createElement('td');
-    userIdCell.innerText = userIdCellText;
-    tableRow.appendChild(userIdCell);
-
-    const nameCell = document.createElement('td');
-    nameCell.innerText = nameCellText;
-    tableRow.appendChild(nameCell);
-
-    const phoneNumberCell = document.createElement('td');
-    phoneNumberCell.innerText = phoneNumberCellText;
-    tableRow.appendChild(phoneNumberCell);
-
+    const table = document.getElementById("user-table");
     const tableBody = document.createElement('tbody');
     table.appendChild(tableBody);
 
@@ -68,11 +54,17 @@ function displaySearchResults() {
         phoneNumberData.innerText = user.phoneNumber;
         row.appendChild(phoneNumberData);
     });
+
+    userList.appendChild(table);
+    const testP = document.createElement('p');
+    testP.innerText = "This is a test";
+    userList.appendChild(testP);
 }
 
-searchButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    loadUsers();
-});
+// searchButton.addEventListener('click', (event) => {
+//     event.preventDefault();
+//     loadUsers();
+// });
 
+init();
 displaySearchResults();

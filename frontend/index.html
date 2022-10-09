@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>OCLC Interview API Project Demo</title>
         <script src="./node_modules/axios/dist/axios.min.js"></script>
-        <script src="index.js"></script>
+        <script src="index.js" defer></script>
     </head>
     <body>
         <h1>OCLC Interview API Project Demo</h1>
@@ -46,6 +46,16 @@
             <button id="search-button">Search</button>
         </form>
         <div id="users" class="user-list">
+            <table id="user-table">
+                <thead>
+                    <tr>
+                        <td>User ID</td>
+                        <td>Name</td>
+                        <td>Phone Number</td>
+                    </tr>
+                </thead>
+            </table>
+            <p> is this showing up? </p>
         </div>
     </body>
 </html>
