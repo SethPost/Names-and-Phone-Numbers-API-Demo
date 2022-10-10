@@ -15,83 +15,48 @@ public class JdbcUserDao implements UserDao {
     public JdbcUserDao(JdbcTemplate jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
-
-    // This method gets all users in the database.
+    
     @Override
-    public List<User> getAllUsers() {
+    public List<User> getUsers(String searchQuery, String sortIndication) {
+
+        // Declare the list we will ultimately return.
         List<User> users = new ArrayList<>();
-        String sql = "Select * FROM users";
 
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-        while (results.next()) {
-            User user = mapRowToUser(results);
-            users.add(user);
-        }
-        return users;
-    }
+        // Starter sql statement that we will add onto depending on the search parameters provided.
+        String sql = "Select user_id, name, phone_number FROM users";
 
-    // This method gets all users in the database in alphabetical order by name.
-    @Override
-    public List<User> getAllUsersAscending() {
-        List<User> users = new ArrayList<>();
-        String sql = "Select * FROM users ORDER BY name ASC";
+        // If both a searchQuery and sortIndication are provided
+        if (searchQuery != null && sortIndication != null) {
 
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-        while (results.next()) {
-            User user = mapRowToUser(results);
-            users.add(user);
-        }
-        return users;
-    }
+            // If sortIndication is alphabetical
+            if (sortIndication.equals("Alphabetical")) {
+                sql += " WHERE name LIKE '%" + searchQuery + "%' ORDER BY name ASC";
 
-    // This method gets all users in the database in reverse alphabetical order by name.
-    @Override
-    public List<User> getAllUsersDescending() {
-        List<User> users = new ArrayList<>();
-        String sql = "Select * FROM users ORDER BY name DESC";
+            // If sortIndication is reverse alphabetical
+            } else if (sortIndication.equals("Reverse Alphabetical")) {
+                sql += " WHERE name LIKE '%" + searchQuery + "%' ORDER BY name DESC";
 
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-        while (results.next()) {
-            User user = mapRowToUser(results);
-            users.add(user);
-        }
-        return users;
-    }
-
-    // This method uses a search query to return all users whose names contain the search query (case-sensitive).
-    // It returns the users in order of their entry number (or userId).
-    @Override
-    public List<User> getUsersByName(String searchQuery) {
-        List<User> users = new ArrayList<>();
-        String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%'";
-            SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-            while (results.next()) {
-                User user = mapRowToUser(results);
-                users.add(user);
+            // If a sortIndication is provided but doesn't match "Alphabetical"
+            // or "Reverse Alphabetical", results will be sorted by default (entry number)
+            } else {
+                sql += " WHERE name LIKE '%" + searchQuery + "%'";
             }
-        return users;
-    }
 
-    // This method uses a search query to return all users whose names contain the search query (case-sensitive).
-    // It returns the users in alphabetical order by name.
-    @Override
-    public List<User> getUsersByNameAscending(String searchQuery) {
-        List<User> users = new ArrayList<>();
-        String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%' ORDER BY name ASC";
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
-        while (results.next()) {
-            User user = mapRowToUser(results);
-            users.add(user);
+        // If only a searchQuery is provided, no sortIndication
+        } else if (searchQuery != null) {
+            sql += " WHERE name LIKE '%" + searchQuery + "%'";
+
+        // If only sortIndication is provided, no searchQuery
+        } else if (sortIndication != null) {
+            if (sortIndication.equals("Alphabetical")) {
+                sql += " ORDER BY name ASC";
+            } else if (sortIndication.equals("Reverse Alphabetical")) {
+                sql += " ORDER BY name DESC";
+            }
         }
-        return users;
-    }
 
-    // This method uses a search query to return all users whose names contain the search query (case-sensitive).
-    // It returns the users in reverse alphabetical order by name.
-    @Override
-    public List<User> getUsersByNameDescending(String searchQuery) {
-        List<User> users = new ArrayList<>();
-        String sql = "SELECT user_id, name, phone_number FROM users WHERE name LIKE '%" + searchQuery + "%' ORDER BY name DESC";
+        // Map results of database search to User model, add each one
+        // to the users list we declared at start of method.
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             User user = mapRowToUser(results);

@@ -6,17 +6,7 @@ import java.util.List;
 
 public interface UserDao {
 
-    List<User> getAllUsers();
-
-    List<User> getAllUsersAscending();
-
-    List<User> getAllUsersDescending();
-
-    List<User> getUsersByName(String searchQuery);
-
-    List<User> getUsersByNameAscending(String searchQuery);
-
-    List<User> getUsersByNameDescending(String searchQuery);
+    List<User> getUsers(String searchQuery, String sortIndication);
 
     List<List<User>> paginateResults(List<User> users, int pageSize);
 
