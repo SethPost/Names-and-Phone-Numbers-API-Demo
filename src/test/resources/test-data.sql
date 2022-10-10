@@ -61,4 +61,4 @@ insert into users (name, phone_number) values ('Antony Darnbrook', '7271402866')
 insert into users (name, phone_number) values ('Ellary Castlake', '3334853837');
 insert into users (name, phone_number) values ('Allina Sayle', '2734922658');
 
-COMMIT TRANSACTION;
+COMMIT;
