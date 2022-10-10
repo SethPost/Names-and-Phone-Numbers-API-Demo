@@ -6,12 +6,12 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+
 import javax.sql.DataSource;
 
-public class JdbcUserDaoTests {
+public class JdbcUserDaoTests extends BaseDaoTests {
 
     private JdbcUserDao sut;
-    private DataSource dataSource;
 
     @Before
     public void setup() {
@@ -20,8 +20,8 @@ public class JdbcUserDaoTests {
     }
 
     @Test
-    public void getUsers_gets_202_users() {
-        int databaseSize = 202;
+    public void getUsers_no_params_gets_51_users() {
+        int databaseSize = 51;
         int result = sut.getUsers("", "").size();
 
         Assert.assertEquals(databaseSize, result);
