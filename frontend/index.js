@@ -25,7 +25,14 @@ function init() {
 }
 
 function loadUsers() {
-    axios.get('http://localhost:8080/users').then(
+    axios.get('http://localhost:8080/users', {
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+            "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token, Authorization, Accept,charset,boundary,Content-Length"
+        }
+    }).then(
         (response) => {
             this.users = response.data;
         }

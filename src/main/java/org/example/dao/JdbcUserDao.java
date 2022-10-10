@@ -77,6 +77,13 @@ public class JdbcUserDao implements UserDao {
         // Initialize an empty list of pages (or list of lists of users)
         List<List<User>> pages = new ArrayList<>();
 
+        // Make sure pageSize is not more than 50 or less than 1.
+        if (pageSize > 50) {
+            pageSize = 50;
+        } else if (pageSize < 1) {
+            pageSize = 1;
+        }
+
         // Setting up the first loop. The iterator increases by pageSize so that each list does not overlap.
         for (int i = 0; i < users.size(); i += pageSize) {
 

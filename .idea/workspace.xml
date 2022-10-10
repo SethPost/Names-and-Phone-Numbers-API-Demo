@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/test/TestingDatabaseConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/schema.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/BaseDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/BaseDaoTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,20 +58,7 @@
       <recent name="C:\Users\posts\workspace\OCLC Interview API Demo Project\OCLC -Interview-API-Demo-Project\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
-      <module name="OCLC-Interview-API-Demo-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JdbcUserDaoTests">
     <configuration name="JdbcUserDaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
@@ -81,15 +66,20 @@
           <option name="PATTERN" value="org.example.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getUsers_gets_202_users" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcUserDaoTests.getPage_pageSize_51_pageNumber_3_returns_Allina_Sayle_only" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
@@ -99,13 +89,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getUsers_gets_202_users" />
+      <option name="METHOD_NAME" value="getPage_pageSize_51_pageNumber_3_returns_Allina_Sayle_only" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getUsers_no_params_gets_51_users" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcUserDaoTests.getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Cilka_Haddacks_first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +105,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getUsers_no_params_gets_51_users" />
+      <option name="METHOD_NAME" value="getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Cilka_Haddacks_first" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getUsers_search_Seth_gets_1_result" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcUserDaoTests.getUsers_max_page_size_is_50" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +121,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getUsers_search_Seth_gets_1_result" />
+      <option name="METHOD_NAME" value="getUsers_max_page_size_is_50" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcUserDaoTests.getUsers_min_page_size_is_1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OCLC-Interview-API-Demo-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
+      <option name="METHOD_NAME" value="getUsers_min_page_size_is_1" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.JdbcUserDaoTests" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_search_Seth_gets_1_result" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_no_params_gets_51_users" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_gets_202_users" />
+        <item itemvalue="JUnit.JdbcUserDaoTests.getPage_pageSize_51_pageNumber_3_returns_Allina_Sayle_only" />
+        <item itemvalue="JUnit.JdbcUserDaoTests.getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Cilka_Haddacks_first" />
+        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_min_page_size_is_1" />
+        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_max_page_size_is_50" />
       </list>
     </recent_temporary>
   </component>
@@ -171,6 +177,10 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OCLC_Interview_API_Demo_Project$Application.ic" NAME="Application Coverage Results" MODIFIED="1665244270144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/OCLC_Interview_API_Demo_Project$JdbcUserDaoTests.ic" NAME="JdbcUserDaoTests Coverage Results" MODIFIED="1665431783209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.test.*</FILTER>
       <FILTER>org.example.*</FILTER>
     </SUITE>
   </component>
