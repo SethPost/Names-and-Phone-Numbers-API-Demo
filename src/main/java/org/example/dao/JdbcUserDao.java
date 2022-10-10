@@ -128,6 +128,11 @@ public class JdbcUserDao implements UserDao {
     //This method takes a list of pages and returns the one indicated by pageNumber.
     @Override
     public List<User> getPage(List<List<User>> users, int pageNumber) {
+        if (pageNumber > users.size()) {
+            pageNumber = users.size();
+        } else if (pageNumber < 1) {
+            pageNumber = 1;
+        }
         return users.get(pageNumber - 1);
     }
 

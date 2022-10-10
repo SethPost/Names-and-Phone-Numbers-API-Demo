@@ -24,13 +24,13 @@ function init() {
     ];
 }
 
-// function loadUsers() {
-//     axios.get('http://localhost:8080/users').then(
-//         (response) => {
-//             this.users = response.data;
-//         }
-//     )
-// }
+function loadUsers() {
+    axios.get('http://localhost:8080/users').then(
+        (response) => {
+            this.users = response.data;
+        }
+    )
+}
 
 function displaySearchResults() {
 
@@ -61,10 +61,10 @@ function displaySearchResults() {
     userList.appendChild(testP);
 }
 
-// searchButton.addEventListener('click', (event) => {
-//     event.preventDefault();
-//     loadUsers();
-// });
+searchButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    loadUsers();
+});
 
 init();
 displaySearchResults();

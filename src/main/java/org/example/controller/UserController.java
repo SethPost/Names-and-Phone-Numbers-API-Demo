@@ -57,9 +57,12 @@ public class UserController {
             if (users.size() != 0) {
                 pages = userDao.paginateResults(users, pageSize);
 
-            // Checking that the pageNumber requested exists in our paginated list.
+            // Ensuring that the pageNumber requested exists in our paginated list.
+
                 if (pageNumber > pages.size()) {
-                    throw new RuntimeException("There are not that many pages of results. Please select a lower number.");
+                    pageNumber = pages.size();
+                } else if (pageNumber < 1) {
+                    pageNumber = 1;
                 }
 
             // Returning the specific page requested from our paginated list of results.
