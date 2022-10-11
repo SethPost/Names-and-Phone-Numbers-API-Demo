@@ -39,6 +39,21 @@ public class UserController {
 
         // Checking that our resulting list is not empty. If not, the list is paginated by the pageSize indicated.
 
+        // Make sure pageSize is not more than 50, less than 1, or not a number.
+        // This code is in the JdbcUserDao method but did not reflect the pageSize change
+        // in the logger.
+        // Make sure pageSize is not more than 50 or less than 1.
+        if (pageSize > 50) {
+            pageSize = 50;
+        } else if (pageSize < 1) {
+            pageSize = 1;
+        }
+        else if (pageSize >= 1 || pageSize <= 0) {
+            pageSize += 0;
+        } else {
+            throw new PageSizeOrPageNumberInvalidException();
+        }
+
             if (users.size() != 0) {
                 pages = userDao.paginateResults(users, pageSize);
 
@@ -49,11 +64,17 @@ public class UserController {
                     pageNumber = 1;
                 }
 
+                // Log the response before returning it
+                logger.logResponse(searchQuery, sortIndication, pageSize, pageNumber, userDao.getPage(pages, pageNumber));
+
                 // Returning the specific page requested from our paginated list of results.
                 return userDao.getPage(pages, pageNumber);
 
                 // Returns an empty list. Avoids IndexOutOfBoundsException.
             } else {
+                // Log the response before returning it
+                logger.logResponse(searchQuery, sortIndication, pageSize, pageNumber, users);
+
                 return users;
             }
     }

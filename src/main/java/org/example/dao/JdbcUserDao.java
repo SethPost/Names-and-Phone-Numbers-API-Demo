@@ -78,12 +78,13 @@ public class JdbcUserDao implements UserDao {
         // Initialize an empty list of pages (or list of lists of users)
         List<List<User>> pages = new ArrayList<>();
 
-        // Make sure pageSize is not more than 50 or less than 1.
+        // Make sure pageSize is not more than 50, less than 1, or not a number.
         if (pageSize > 50) {
             pageSize = 50;
         } else if (pageSize < 1) {
             pageSize = 1;
-        } else if (pageSize >= 1 || pageSize <= 0) {
+        }
+        else if (pageSize >= 1 || pageSize <= 0) {
             pageSize += 0;
         } else {
             throw new PageSizeOrPageNumberInvalidException();
