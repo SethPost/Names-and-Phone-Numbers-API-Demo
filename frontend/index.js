@@ -89,15 +89,59 @@ function loadUsers() {
             }
             users = response.data;
 
-            const table = document.getElementById("user-table");
-            if (document.getElementById('table-body')) {
-                const tableBody = document.getElementById('table-body');
-                table.removeChild(tableBody);    
+            const searchResults = document.getElementById("users");
+
+            // If table already exists, remove it and the title
+            if (document.getElementById("user-table")) {
+                const table = document.getElementById("user-table");
+                searchResults.removeChild(table);
             }
+
+            // If table title already exists, remove it.
+            if (document.getElementById("table-title")) {
+                const tableTitle = document.getElementById("table-title");
+                searchResults.removeChild(tableTitle);
+            }
+
+            //Create h2
+            const tableTitle = document.createElement('h2');
+            tableTitle.setAttribute("id", "table-title");
+            tableTitle.innerText = tableName;
+            searchResults.appendChild(tableTitle);
+
+            //Create table
+            const table = document.createElement('table');
+            table.setAttribute("id", "user-table");
+            searchResults.appendChild(table);
+
+            //Create thead
+            const tableHead = document.createElement('thead');
+            table.appendChild(tableHead);
+
+            //Create table head row
+            const tableHeadRow = document.createElement('tr');
+            tableHead.appendChild(tableHeadRow);
+
+            //Create userId column thead cell
+            const userIdCell = document.createElement('td');
+            userIdCell.innerText = userIdCellText;
+            tableHeadRow.appendChild(userIdCell);
+
+            //Create name column thead cell
+            const nameCell = document.createElement('td');
+            nameCell.innerText = nameCellText;
+            tableHeadRow.appendChild(nameCell);
+
+            //Create phoneNumber column thead cell
+            const phoneNumberCell = document.createElement('td');
+            phoneNumberCell.innerText = phoneNumberCellText;
+            tableHeadRow.appendChild(phoneNumberCell);
+
+            //Create tableBody
             const tableBody = document.createElement('tbody');
-            tableBody.setAttribute("id", "table-body");
             table.appendChild(tableBody);
 
+            //Create table row with data for each user
             users.forEach((user) => {
                 const row = document.createElement('tr');
                 tableBody.appendChild(row);

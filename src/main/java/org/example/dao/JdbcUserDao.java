@@ -1,5 +1,6 @@
 package org.example.dao;
 
+import org.example.exception.PageSizeOrPageNumberInvalidException;
 import org.example.model.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
@@ -72,7 +73,7 @@ public class JdbcUserDao implements UserDao {
 
     //This method takes a list and paginates it by the number of users per page provided.
     @Override
-    public List<List<User>> paginateResults(List<User> users, int pageSize) {
+    public List<List<User>> paginateResults(List<User> users, int pageSize) throws PageSizeOrPageNumberInvalidException {
 
         // Initialize an empty list of pages (or list of lists of users)
         List<List<User>> pages = new ArrayList<>();
@@ -82,6 +83,10 @@ public class JdbcUserDao implements UserDao {
             pageSize = 50;
         } else if (pageSize < 1) {
             pageSize = 1;
+        } else if (pageSize >= 1 || pageSize <= 0) {
+            pageSize += 0;
+        } else {
+            throw new PageSizeOrPageNumberInvalidException();
         }
 
         // Setting up the first loop. The iterator increases by pageSize so that each list does not overlap.
@@ -104,11 +109,16 @@ public class JdbcUserDao implements UserDao {
 
     //This method takes a list of pages and returns the one indicated by pageNumber.
     @Override
-    public List<User> getPage(List<List<User>> users, int pageNumber) {
+    public List<User> getPage(List<List<User>> users, int pageNumber) throws PageSizeOrPageNumberInvalidException {
+
         if (pageNumber > users.size()) {
             pageNumber = users.size();
         } else if (pageNumber < 1) {
             pageNumber = 1;
+        } else if (pageNumber >= 1 || pageNumber <= users.size()) {
+            pageNumber += 0;
+        } else {
+            throw new PageSizeOrPageNumberInvalidException();
         }
         return users.get(pageNumber - 1);
     }

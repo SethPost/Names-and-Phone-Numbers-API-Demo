@@ -1,6 +1,7 @@
 package org.example.controller;
 
 import org.example.dao.UserDao;
+import org.example.exception.PageSizeOrPageNumberInvalidException;
 import org.example.logging.Logger;
 import org.example.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,7 +26,7 @@ public class UserController {
     @PreAuthorize("permitAll")
     @GetMapping("/users")
     public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication,
-                               @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) {
+                               @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) throws PageSizeOrPageNumberInvalidException {
 
         // Log the search first
         Logger logger = new Logger();
@@ -37,20 +38,21 @@ public class UserController {
             List<User> users = userDao.getUsers(searchQuery, sortIndication);
 
         // Checking that our resulting list is not empty. If not, the list is paginated by the pageSize indicated.
+
             if (users.size() != 0) {
                 pages = userDao.paginateResults(users, pageSize);
 
-            // Ensuring that the pageNumber requested exists in our paginated list.
+                // Ensuring that the pageNumber requested exists in our paginated list.
                 if (pageNumber > pages.size()) {
                     pageNumber = pages.size();
                 } else if (pageNumber < 1) {
                     pageNumber = 1;
                 }
 
-            // Returning the specific page requested from our paginated list of results.
+                // Returning the specific page requested from our paginated list of results.
                 return userDao.getPage(pages, pageNumber);
 
-            // Returns an empty list. Avoids IndexOutOfBoundsException.
+                // Returns an empty list. Avoids IndexOutOfBoundsException.
             } else {
                 return users;
             }

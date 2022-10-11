@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/logging/Logger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/search-log.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/exception/PageSizeOrPageNumberInvalidException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/search-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/search-log.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
