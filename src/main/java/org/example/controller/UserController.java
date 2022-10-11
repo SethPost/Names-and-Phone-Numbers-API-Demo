@@ -12,7 +12,6 @@ import java.util.List;
 
 @RestController
 @CrossOrigin
-@PreAuthorize("permitAll")
 public class UserController {
 
     @Autowired
