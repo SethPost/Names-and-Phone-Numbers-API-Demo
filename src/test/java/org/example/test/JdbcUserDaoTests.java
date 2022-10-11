@@ -26,8 +26,8 @@ public class JdbcUserDaoTests extends BaseDaoTests {
     }
 
     @Test
-    public void getUsers_search_Seth_gets_1_result() {
-        int result = sut.getUsers("Seth","").size();
+    public void getUsers_search_seth_gets_1_result() {
+        int result = sut.getUsers("seth","").size();
 
         Assert.assertEquals(1, result);
     }
@@ -49,7 +49,8 @@ public class JdbcUserDaoTests extends BaseDaoTests {
 
     @Test
     public void getUsers_nonsense_sortIndication_returns_Allina_Sayle_last() {
-        User resultUser = sut.getUsers("", "as;dlfkj").get(50);
+        List<User> users = sut.getUsers("", "as;dlfkj");
+        User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
         Assert.assertEquals("Allina Sayle", resultUserName);
@@ -65,7 +66,8 @@ public class JdbcUserDaoTests extends BaseDaoTests {
 
     @Test
     public void getUsers_alphabetical_returns_Yorker_Moxham_last() {
-        User resultUser = sut.getUsers("", "Alphabetical").get(50);
+        List<User> users = sut.getUsers("", "Alphabetical");
+        User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
         Assert.assertEquals("Yorker Moxham", resultUserName);
@@ -81,23 +83,25 @@ public class JdbcUserDaoTests extends BaseDaoTests {
 
     @Test
     public void getUsers_reverse_alphabetical_returns_Addy_Littrik_last() {
-        User resultUser = sut.getUsers("", "Reverse Alphabetical").get(50);
+        List<User> users = sut.getUsers("", "Reverse Alphabetical");
+        User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
         Assert.assertEquals("Addy Littrik", resultUserName);
     }
 
     @Test
-    public void getUsers_search_s_alphabetical_returns_Ansel_Pinilla_first() {
+    public void getUsers_search_s_alphabetical_returns_Allina_Sayle_first() {
         User resultUser = sut.getUsers("s", "Alphabetical").get(0);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Ansel Pinilla", resultUserName);
+        Assert.assertEquals("Allina Sayle", resultUserName);
     }
 
     @Test
     public void getUsers_search_s_alphabetical_returns_Willow_Rosekilly_last() {
-        User resultUser = sut.getUsers("s", "Alphabetical").get(15);
+        List<User> users = sut.getUsers("s", "Alphabetical");
+        User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
         Assert.assertEquals("Willow Rosekilly", resultUserName);
@@ -112,11 +116,12 @@ public class JdbcUserDaoTests extends BaseDaoTests {
     }
 
     @Test
-    public void getUsers_search_s_reverse_alphabetical_returns_Ansel_Pinilla_last() {
-        User resultUser = sut.getUsers("s", "Reverse Alphabetical").get(15);
+    public void getUsers_search_s_reverse_alphabetical_returns_Allina_Sayle_last() {
+        List<User> users = sut.getUsers("s", "Reverse Alphabetical");
+        User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Ansel Pinilla", resultUserName);
+        Assert.assertEquals("Allina Sayle", resultUserName);
     }
 
     @Test
@@ -136,14 +141,14 @@ public class JdbcUserDaoTests extends BaseDaoTests {
     }
 
     @Test
-    public void getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Cilka_Haddacks_first() {
+    public void getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Christoph_Bengough_first() {
         List<User> users = sut.getUsers("s", "Alphabetical");
         List<List<User>> paginatedList = sut.paginateResults(users, 4);
         List<User> pageTwo = sut.getPage(paginatedList, 2);
         User resultUser = pageTwo.get(0);
         String resultName = resultUser.getName();
 
-        Assert.assertEquals("Cilka Haddacks", resultName);
+        Assert.assertEquals("Christoph Bengough", resultName);
     }
 
     @Test

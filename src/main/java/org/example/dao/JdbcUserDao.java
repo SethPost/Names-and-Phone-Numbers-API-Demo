@@ -35,21 +35,21 @@ public class JdbcUserDao implements UserDao {
 
             // If sortIndication is alphabetical
             if (sortIndication.equals("Alphabetical")) {
-                sql += " WHERE name LIKE '%" + searchQuery + "%' ORDER BY name ASC";
+                sql += " WHERE name ILIKE '%" + searchQuery + "%' ORDER BY name ASC";
 
             // If sortIndication is reverse alphabetical
             } else if (sortIndication.equals("Reverse Alphabetical")) {
-                sql += " WHERE name LIKE '%" + searchQuery + "%' ORDER BY name DESC";
+                sql += " WHERE name ILIKE '%" + searchQuery + "%' ORDER BY name DESC";
 
             // If a sortIndication is provided but doesn't match "Alphabetical"
             // or "Reverse Alphabetical", results will be sorted by default (entry number)
             } else {
-                sql += " WHERE name LIKE '%" + searchQuery + "%'";
+                sql += " WHERE name ILIKE '%" + searchQuery + "%'";
             }
 
         // If only a searchQuery is provided, no sortIndication
         } else if (searchQuery != null) {
-            sql += " WHERE name LIKE '%" + searchQuery + "%'";
+            sql += " WHERE name ILIKE '%" + searchQuery + "%'";
 
         // If only sortIndication is provided, no searchQuery
         } else if (sortIndication != null) {
