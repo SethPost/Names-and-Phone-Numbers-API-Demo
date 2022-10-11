@@ -20,13 +20,51 @@ let users = [
     // }
 ];
 let params = new URLSearchParams({
-    searchQuery: "",
-    sortIndication: "",
-    pageSize: 50,
-    pageNumber: 1
+    // searchQuery: "",
+    // sortIndication: "",
+    // pageSize: 50,
+    // pageNumber: 1
 });
 
+function getSearchParameters() {
+    let searchQuery = "";
+    if (document.getElementById('searchQuery').value != null) {
+        searchQuery = document.getElementById('searchQuery').value;
+    }
+    console.log(searchQuery);
+    
+    let sortIndication = "";
+    if (document.querySelector('input[name="sortIndication"]:checked')) {
+        sortIndication = document.querySelector('input[name="sortIndication"]:checked').value;
+    }
+    console.log(sortIndication);
+
+    let pageSize = 50;
+    if (document.getElementById('pageSize').value != null) {
+        pageSize = document.getElementById('pageSize').value;
+    }
+    console.log(pageSize);
+
+    let pageNumber = 1;
+    if (document.getElementById('pageNumber').value != null) {
+        pageNumber = document.getElementById('pageNumber').value;
+    }
+    console.log(pageNumber);
+
+    params = {
+        searchQuery,
+        sortIndication,
+        pageSize,
+        pageNumber
+    };
+
+    return params;
+}
+
 function loadUsers() {
+    console.log(params);
+    params = getSearchParameters();
+    console.log(params);
     // let xhr = new XMLHttpRequest();
     // xhr.open("GET", "http://localhost:8080/users");
     // xhr.send();
@@ -45,16 +83,19 @@ function loadUsers() {
         // }
     }).then(
         (response) => {
-            console.log(response.data);
+            console.log(response);
             if (users !== []) {
                 users = [];
             }
             users = response.data;
 
             const table = document.getElementById("user-table");
+            if (document.getElementById('table-body')) {
+                const tableBody = document.getElementById('table-body');
+                table.removeChild(tableBody);    
+            }
             const tableBody = document.createElement('tbody');
             tableBody.setAttribute("id", "table-body");
-            tableBody.setAttribute("class", "table-body");
             table.appendChild(tableBody);
 
             users.forEach((user) => {
