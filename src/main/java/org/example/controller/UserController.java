@@ -1,6 +1,7 @@
 package org.example.controller;
 
 import org.example.dao.UserDao;
+import org.example.logging.Logger;
 import org.example.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -26,6 +27,9 @@ public class UserController {
     public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication,
                                @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) {
 
+        // Log the search first
+        Logger logger = new Logger();
+        logger.logSearch(searchQuery, sortIndication, pageSize, pageNumber);
         // Start by declaring a new list of lists that will be used to pull a single page from.
             List<List<User>> pages = new ArrayList<>();
 
