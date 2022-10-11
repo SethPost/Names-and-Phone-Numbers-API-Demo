@@ -3,15 +3,16 @@ package org.example.controller;
 import org.example.dao.UserDao;
 import org.example.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 
 import java.util.ArrayList;
 import java.util.List;
 
-@CrossOrigin
 @RestController
-//I would include a @PreAuthorize annotation here if I were implementing that in the project
+@CrossOrigin
+@PreAuthorize("permitAll")
 public class UserController {
 
     @Autowired
@@ -21,6 +22,7 @@ public class UserController {
         this.userDao = userDao;
     }
 
+    @PreAuthorize("permitAll")
     @GetMapping("/users")
     public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication,
                                @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) {

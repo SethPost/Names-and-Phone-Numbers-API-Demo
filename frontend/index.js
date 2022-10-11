@@ -1,4 +1,4 @@
-// import axios from "axios";
+
 
 
 const tableName = "Search Results";
@@ -8,6 +8,12 @@ const phoneNumberCellText = "Phone Number";
 const userList = document.getElementById('users');
 const searchButton = document.getElementById('search-button');
 let users = [];
+let params = new URLSearchParams({
+    searchQuery: "",
+    sortIndication: "",
+    pageSize: 50,
+    pageNumber: 1
+});
 
 function init() {
     users = [
@@ -24,19 +30,27 @@ function init() {
     ];
 }
 
-function loadUsers() {
-    axios.get('http://localhost:8080/users', {
-        headers: {
-            "Content-Type": "application/json",
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
-            "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token, Authorization, Accept,charset,boundary,Content-Length"
-        }
-    }).then(
-        (response) => {
-            this.users = response.data;
-        }
-    )
+async function loadUsers() {
+    let xhr = new XMLHttpRequest();
+    xhr.open("GET", "http://localhost:8080/users");
+    xhr.send();
+    xhr.onload = () => console.log(xhr.responseText);
+    // const axios = require('axios');
+    // const res = await axios.get('http://localhost:8080/users', { params });
+    // res.data.args;
+
+    // axios.get('http://localhost:8080/users', {
+    //     headers: {
+    //         "Content-Type": "application/json",
+    //         "Access-Control-Allow-Origin": "*",
+    //         "Access-Control-Allow-Methods": "GET, POST, PATCH, PUT, DELETE, OPTIONS",
+    //         "Access-Control-Allow-Headers": "Origin, Content-Type, X-Auth-Token, Authorization, Accept,charset,boundary,Content-Length"
+    //     }
+    // }).then(
+    //     (response) => {
+    //         this.users = response.data;
+    //     }
+    // )
 }
 
 function displaySearchResults() {
