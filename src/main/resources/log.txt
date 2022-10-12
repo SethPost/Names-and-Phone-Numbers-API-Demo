@@ -2076,3 +2076,2784 @@ Response on 2022-10-12T09:13:36.932472:
 
         ---END OF RESULTS---
 
+Search on 2022-10-12T09:17:27.310119500:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:17:27.313961800:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:17:31.475371:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:17:31.487339:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:17:45.763912300:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:17:45.766903900:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:28:49.266100200:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:28:49.281059800:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:30:03.341650400:
+    Search Query: sadfasdfadsf
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:30:03.381554:
+    Search Query is now: sadfasdfadsf
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:31:22.770268700:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:31:22.815147:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:41:21.054860200:
+    Search Query: asdasdfasdf
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:41:21.077832700:
+    Search Query is now: asdasdfasdf
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:41:29.537210500:
+    Search Query: 
+    Sort Method: 
+    Page Size: 1
+    Page Number: 1
+
+Response on 2022-10-12T09:41:29.541157900:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 1
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:41:39.599186400:
+    Search Query: 
+    Sort Method: Alphabetical
+    Page Size: 0
+    Page Number: 1
+
+Response on 2022-10-12T09:41:39.616110400:
+    Search Query is now: 
+    Sort Method is now: Alphabetical
+    Page Size is now: 1
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 182
+        Name: Aaron Dragonette
+        Phone Number: 6714445991
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:41:55.614961200:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:41:55.625926500:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:46:02.674574900:
+    Search Query: asdasdfasdfas
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:46:02.685544900:
+    Search Query is now: asdasdfasdfas
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:52:09.012932900:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:52:09.027893200:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:54:05.888661800:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:54:05.900630300:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T09:58:21.197953:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T09:58:21.210917300:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T10:08:08.820242500:
+    Search Query: 
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T10:08:08.861132900:
+    Search Query is now: 
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 1
+        Name: Seth Post
+        Phone Number: 3308073006
+
+        Number in List: 2
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 3
+        User ID: 3
+        Name: Fitz Stitcher
+        Phone Number: 2148997923
+
+        Number in List: 4
+        User ID: 4
+        Name: Darcy McInulty
+        Phone Number: 5992296329
+
+        Number in List: 5
+        User ID: 5
+        Name: Lenka Rathe
+        Phone Number: 1747607603
+
+        Number in List: 6
+        User ID: 6
+        Name: Nisse Fenix
+        Phone Number: 1672149430
+
+        Number in List: 7
+        User ID: 7
+        Name: Roddie Boram
+        Phone Number: 1639135476
+
+        Number in List: 8
+        User ID: 8
+        Name: Jo-anne Danher
+        Phone Number: 2052230194
+
+        Number in List: 9
+        User ID: 9
+        Name: Cilka Haddacks
+        Phone Number: 5583741538
+
+        Number in List: 10
+        User ID: 10
+        Name: Gordie Keer
+        Phone Number: 8676980371
+
+        Number in List: 11
+        User ID: 11
+        Name: Meridel Lisimore
+        Phone Number: 4593496211
+
+        Number in List: 12
+        User ID: 12
+        Name: Haleigh Glyde
+        Phone Number: 4849390042
+
+        Number in List: 13
+        User ID: 13
+        Name: Casi MacCole
+        Phone Number: 5726680400
+
+        Number in List: 14
+        User ID: 14
+        Name: Heidie Standbrooke
+        Phone Number: 2956751121
+
+        Number in List: 15
+        User ID: 15
+        Name: Deni Mengue
+        Phone Number: 6504430702
+
+        Number in List: 16
+        User ID: 16
+        Name: Daisi Pleasance
+        Phone Number: 4859276479
+
+        Number in List: 17
+        User ID: 17
+        Name: Kendal Grayne
+        Phone Number: 5975013292
+
+        Number in List: 18
+        User ID: 18
+        Name: Laural Gallaway
+        Phone Number: 5637845571
+
+        Number in List: 19
+        User ID: 19
+        Name: Lynett Ales0
+        Phone Number: 8707998856
+
+        Number in List: 20
+        User ID: 20
+        Name: Venus Greim
+        Phone Number: 7937725635
+
+        Number in List: 21
+        User ID: 21
+        Name: Janith Puddephatt
+        Phone Number: 7624979702
+
+        Number in List: 22
+        User ID: 22
+        Name: Tod Pidgeley
+        Phone Number: 1625930932
+
+        Number in List: 23
+        User ID: 23
+        Name: Maximilien Willbond
+        Phone Number: 8782211085
+
+        Number in List: 24
+        User ID: 24
+        Name: Luise McMennum
+        Phone Number: 4646623900
+
+        Number in List: 25
+        User ID: 25
+        Name: Ansel Pinilla
+        Phone Number: 6478438473
+
+        Number in List: 26
+        User ID: 26
+        Name: Pia Beagin
+        Phone Number: 6852209891
+
+        Number in List: 27
+        User ID: 27
+        Name: Bernice McFall
+        Phone Number: 6909421930
+
+        Number in List: 28
+        User ID: 28
+        Name: Sukey Oldroyde
+        Phone Number: 6568469842
+
+        Number in List: 29
+        User ID: 29
+        Name: Sibelle Klimentyonok
+        Phone Number: 7029454682
+
+        Number in List: 30
+        User ID: 30
+        Name: Christoph Bengough
+        Phone Number: 3059303778
+
+        Number in List: 31
+        User ID: 31
+        Name: Gillian Oger
+        Phone Number: 5481532153
+
+        Number in List: 32
+        User ID: 32
+        Name: Orin Bearblock
+        Phone Number: 1502526360
+
+        Number in List: 33
+        User ID: 33
+        Name: Lydie Lared
+        Phone Number: 3418824713
+
+        Number in List: 34
+        User ID: 34
+        Name: Willette Biasini
+        Phone Number: 6319469654
+
+        Number in List: 35
+        User ID: 35
+        Name: Chandal Debold
+        Phone Number: 5248075377
+
+        Number in List: 36
+        User ID: 36
+        Name: Willow Rosekilly
+        Phone Number: 9204978017
+
+        Number in List: 37
+        User ID: 37
+        Name: Emilio Yakunikov
+        Phone Number: 1392135743
+
+        Number in List: 38
+        User ID: 38
+        Name: Britt Adolf
+        Phone Number: 4872260688
+
+        Number in List: 39
+        User ID: 39
+        Name: Jerrilyn Brereton
+        Phone Number: 2911799019
+
+        Number in List: 40
+        User ID: 40
+        Name: Yorker Moxham
+        Phone Number: 8021860660
+
+        Number in List: 41
+        User ID: 41
+        Name: Eberhard Hasted
+        Phone Number: 5241875315
+
+        Number in List: 42
+        User ID: 42
+        Name: Cori Pocknell
+        Phone Number: 1988644436
+
+        Number in List: 43
+        User ID: 43
+        Name: Teodora Dullaghan
+        Phone Number: 7322440636
+
+        Number in List: 44
+        User ID: 44
+        Name: Veronica Hucker
+        Phone Number: 5741998195
+
+        Number in List: 45
+        User ID: 45
+        Name: Addy Littrik
+        Phone Number: 3899635231
+
+        Number in List: 46
+        User ID: 46
+        Name: Brenn McGaughie
+        Phone Number: 7173221114
+
+        Number in List: 47
+        User ID: 47
+        Name: Bastian Brosoli
+        Phone Number: 4374262524
+
+        Number in List: 48
+        User ID: 48
+        Name: Diann Krelle
+        Phone Number: 3195044558
+
+        Number in List: 49
+        User ID: 49
+        Name: Antony Darnbrook
+        Phone Number: 7271402866
+
+        Number in List: 50
+        User ID: 50
+        Name: Ellary Castlake
+        Phone Number: 3334853837
+
+        ---END OF RESULTS---
+
+Search on 2022-10-12T10:08:33.689143900:
+    Search Query: john
+    Sort Method: 
+    Page Size: 50
+    Page Number: 1
+
+Response on 2022-10-12T10:08:33.693133500:
+    Search Query is now: john
+    Sort Method is now: 
+    Page Size is now: 50
+    Page Number is now: 1
+
+    Search Result List: 
+
+        Number in List: 1
+        User ID: 2
+        Name: John Doe
+        Phone Number: 1234567890
+
+        Number in List: 2
+        User ID: 133
+        Name: Rodolph Camplejohn
+        Phone Number: 9783444266
+
+        Number in List: 3
+        User ID: 139
+        Name: Johnette Finnis
+        Phone Number: 3187375908
+
+        ---END OF RESULTS---
+

@@ -125,22 +125,22 @@ function loadUsers() {
                 tableHead.appendChild(tableHeadRow);
 
                 //Create rowNumber column thead cell
-                const rowNumberCell = document.createElement('td');
+                const rowNumberCell = document.createElement('th');
                 rowNumberCell.innerText = rowNumberCellText;
                 tableHeadRow.appendChild(rowNumberCell);
 
                 //Create userId column thead cell
-                const userIdCell = document.createElement('td');
+                const userIdCell = document.createElement('th');
                 userIdCell.innerText = userIdCellText;
                 tableHeadRow.appendChild(userIdCell);
 
                 //Create name column thead cell
-                const nameCell = document.createElement('td');
+                const nameCell = document.createElement('th');
                 nameCell.innerText = nameCellText;
                 tableHeadRow.appendChild(nameCell);
 
                 //Create phoneNumber column thead cell
-                const phoneNumberCell = document.createElement('td');
+                const phoneNumberCell = document.createElement('th');
                 phoneNumberCell.innerText = phoneNumberCellText;
                 tableHeadRow.appendChild(phoneNumberCell);
 
