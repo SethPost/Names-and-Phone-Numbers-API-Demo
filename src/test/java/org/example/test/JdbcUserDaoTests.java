@@ -1,6 +1,7 @@
 package org.example.test;
 
 import org.example.dao.JdbcUserDao;
+import org.example.exception.PageSizeOrPageNumberInvalidException;
 import org.example.model.User;
 import org.junit.Assert;
 import org.junit.Before;
@@ -125,7 +126,7 @@ public class JdbcUserDaoTests extends BaseDaoTests {
     }
 
     @Test
-    public void paginateResults_max_page_size_is_50() {
+    public void paginateResults_max_page_size_is_50() throws PageSizeOrPageNumberInvalidException {
         List<User> allUsers = sut.getUsers("", "");
         List<List<User>> paginatedList = sut.paginateResults(allUsers, 51);
 
@@ -133,7 +134,7 @@ public class JdbcUserDaoTests extends BaseDaoTests {
     }
 
     @Test
-    public void paginateResults_min_page_size_is_1() {
+    public void paginateResults_min_page_size_is_1() throws PageSizeOrPageNumberInvalidException {
         List<User> allUsers = sut.getUsers("", "");
         List<List<User>> paginatedList = sut.paginateResults(allUsers, 0);
 
@@ -141,7 +142,7 @@ public class JdbcUserDaoTests extends BaseDaoTests {
     }
 
     @Test
-    public void getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Christoph_Bengough_first() {
+    public void getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Christoph_Bengough_first() throws PageSizeOrPageNumberInvalidException {
         List<User> users = sut.getUsers("s", "Alphabetical");
         List<List<User>> paginatedList = sut.paginateResults(users, 4);
         List<User> pageTwo = sut.getPage(paginatedList, 2);
@@ -152,7 +153,7 @@ public class JdbcUserDaoTests extends BaseDaoTests {
     }
 
     @Test
-    public void getPage_pageSize_51_pageNumber_3_returns_Allina_Sayle_only() {
+    public void getPage_pageSize_51_pageNumber_3_returns_Allina_Sayle_only() throws PageSizeOrPageNumberInvalidException {
         List<User> users = sut.getUsers("", "");
         List<List<User>> paginatedList = sut.paginateResults(users, 51);
         List<User> lastPage = sut.getPage(paginatedList, 3);
