@@ -37,12 +37,9 @@ public class UserController {
         // Get a list of all users that we will then filter out by request params.
             List<User> users = userDao.getUsers(searchQuery, sortIndication);
 
-        // Checking that our resulting list is not empty. If not, the list is paginated by the pageSize indicated.
-
         // Make sure pageSize is not more than 50, less than 1, or not a number.
         // This code is in the JdbcUserDao method but did not reflect the pageSize change
         // in the logger.
-        // Make sure pageSize is not more than 50 or less than 1.
         if (pageSize > 50) {
             pageSize = 50;
         } else if (pageSize < 1) {
@@ -54,6 +51,7 @@ public class UserController {
             throw new PageSizeOrPageNumberInvalidException();
         }
 
+        // Checking that our resulting list is not empty. If not, the list is paginated by the pageSize indicated.
             if (users.size() != 0) {
                 pages = userDao.paginateResults(users, pageSize);
 
