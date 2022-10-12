@@ -175,6 +175,12 @@ function loadUsers() {
     )
 }
 
+searchButton.addEventListener('click', (event) => {
+    event.preventDefault();
+    loadUsers();
+});
+
+// Below is vestigial from trying to break up the table creation into its own method. Ran into issues receiving data.
 // function displaySearchResults() {
 
 //     const table = document.getElementById("user-table");
@@ -204,7 +210,4 @@ function loadUsers() {
 //     // userList.appendChild(testP);
 // }
 
-searchButton.addEventListener('click', (event) => {
-    event.preventDefault();
-    loadUsers();
-});
+
