@@ -1,9 +1,6 @@
 package org.example.logging;
 
-import org.apache.tomcat.jni.Local;
 import org.example.model.User;
-import org.springframework.security.core.parameters.P;
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -15,6 +12,7 @@ public class Logger {
 
     File log = new File("src\\main\\resources\\log.txt");
 
+    // Logs the search time and search parameters in log.txt file.
     public void logSearch(String searchQuery, String sortIndication, int pageSize, int pageNumber) {
         try (PrintWriter logger = new PrintWriter(
                 new FileOutputStream(log, true)
@@ -30,6 +28,8 @@ public class Logger {
         }
     }
 
+    /* Logs the response time, the search parameters after the search, and the search results
+    formatted for easy reading. */
     public void logResponse(String searchQuery, String sortIndication, int pageSize, int pageNumber, List<User> users) {
         try (PrintWriter logger = new PrintWriter(
                 new FileOutputStream(log, true)

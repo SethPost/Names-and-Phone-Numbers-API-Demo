@@ -12,11 +12,8 @@ import java.util.ArrayList;
 
 @Component
 public class JdbcUserDao implements UserDao {
-    private final JdbcTemplate jdbcTemplate;
 
-//    public JdbcUserDao(JdbcTemplate jdbcTemplate) {
-//        this.jdbcTemplate = jdbcTemplate;
-//    }
+    private final JdbcTemplate jdbcTemplate;
 
     public JdbcUserDao(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
@@ -42,8 +39,8 @@ public class JdbcUserDao implements UserDao {
             } else if (sortIndication.equals("Reverse Alphabetical")) {
                 sql += " WHERE name ILIKE '%" + searchQuery + "%' ORDER BY name DESC";
 
-            // If a sortIndication is provided but doesn't match "Alphabetical"
-            // or "Reverse Alphabetical", results will be sorted by default (entry number)
+            /* If a sortIndication is provided but doesn't match "Alphabetical"
+            or "Reverse Alphabetical", results will be sorted by default (entry number) */
             } else {
                 sql += " WHERE name ILIKE '%" + searchQuery + "%'";
             }
@@ -61,8 +58,8 @@ public class JdbcUserDao implements UserDao {
             }
         }
 
-        // Map results of database search to User model, add each one
-        // to the users list we declared at start of method.
+        /* Map results of database search to User model, add each one
+         to the users list we declared at start of method. */
         SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
         while (results.next()) {
             User user = mapRowToUser(results);
@@ -96,8 +93,9 @@ public class JdbcUserDao implements UserDao {
             // Initialize an empty list of users at the start of each page (every time the first loop starts again).
             List<User> pageOfUsers = new ArrayList<>();
 
-            // The second loop starts at the beginning of each new 'page' (indicated by 'i')
-            // It adds users to the current page until the end of the page is reached OR the end of the users list is reached.
+            /* The second loop starts at the beginning of each new 'page' (indicated by 'i')
+             It adds users to the current page until the end of the page is reached
+             OR the end of the users list is reached. */
             for (int j = i; (j < i + pageSize) && (j < users.size()); j++) {
                 pageOfUsers.add(users.get(j));
             }
@@ -112,6 +110,7 @@ public class JdbcUserDao implements UserDao {
     @Override
     public List<User> getPage(List<List<User>> users, int pageNumber) throws PageSizeOrPageNumberInvalidException {
 
+        // Check that the pageNumber requested is not greater than the pages returned.
         if (pageNumber > users.size()) {
             pageNumber = users.size();
         } else if (pageNumber < 1) {

@@ -14,10 +14,11 @@ import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.Objects;
 
+// This class is used to configure a test database for the JdbcUserDaoTests.
+
 @Configuration
 public class TestingDatabaseConfig {
-    // To use an existing PostgreSQL database, set the following environment variables.
-    // Otherwise, a temporary database will be created on the local machine.
+
     private static final String DB_HOST =
             Objects.requireNonNullElse(System.getenv("DB_HOST"), "localhost");
     private static final String DB_PORT =
@@ -52,7 +53,7 @@ public class TestingDatabaseConfig {
         dataSource.setUrl(String.format("jdbc:postgresql://%s:%s/%s", DB_HOST, DB_PORT, DB_NAME));
         dataSource.setUsername(DB_USER);
         dataSource.setPassword(DB_PASSWORD);
-        dataSource.setAutoCommit(false); //So we can rollback after each test.
+        dataSource.setAutoCommit(false);
 
         ScriptUtils.executeSqlScript(dataSource.getConnection(), new ClassPathResource("test-data.sql"));
 

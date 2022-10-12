@@ -31,15 +31,16 @@ public class UserController {
         // Log the search first
         Logger logger = new Logger();
         logger.logSearch(searchQuery, sortIndication, pageSize, pageNumber);
+
         // Start by declaring a new list of lists that will be used to pull a single page from.
-            List<List<User>> pages = new ArrayList<>();
+        List<List<User>> pages = new ArrayList<>();
 
         // Get a list of all users that we will then filter out by request params.
-            List<User> users = userDao.getUsers(searchQuery, sortIndication);
+        List<User> users = userDao.getUsers(searchQuery, sortIndication);
 
-        // Make sure pageSize is not more than 50, less than 1, or not a number.
-        // This code is in the JdbcUserDao method but did not reflect the pageSize change
-        // in the logger.
+        /* Make sure pageSize is not more than 50, less than 1, or not a number.
+         This code is in the JdbcUserDao method but did not reflect the pageSize change
+         in the logger. */
         if (pageSize > 50) {
             pageSize = 50;
         } else if (pageSize < 1) {
@@ -55,7 +56,9 @@ public class UserController {
             if (users.size() != 0) {
                 pages = userDao.paginateResults(users, pageSize);
 
-                // Ensuring that the pageNumber requested exists in our paginated list.
+                /* Ensuring that the pageNumber requested exists in our paginated list.
+                 This code is in the JdbcUserDao method but did not reflect the pageNumber change
+                 in the logger. */
                 if (pageNumber > pages.size()) {
                     pageNumber = pages.size();
                 } else if (pageNumber < 1) {

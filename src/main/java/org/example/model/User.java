@@ -8,14 +8,16 @@ public class User {
     private String name;
     private String phoneNumber;
 
-    public User() {}
-
     public User(int userId, String name, String phoneNumber) {
         this.userId = userId;
         this.name = name;
         this.phoneNumber = phoneNumber;
     }
 
+    //Empty constructor, just in case
+    public User() {}
+
+    //Getters and Setters
     public int getUserId() {
         return userId;
     }
