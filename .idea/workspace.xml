@@ -57,7 +57,7 @@
       <recent name="C:\Users\posts\workspace\OCLC Interview API Demo Project\OCLC -Interview-API-Demo-Project\database" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcUserDaoTests">
+  <component name="RunManager" selected="Application.Application">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Application" />
       <module name="OCLC-Interview-API-Demo-Project" />
@@ -141,8 +141,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JdbcUserDaoTests" />
         <item itemvalue="Application.Application" />
+        <item itemvalue="JUnit.JdbcUserDaoTests" />
         <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_reverse_alphabetical_returns_Addy_Littrik_last" />
         <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_search_seth_gets_1_result" />
         <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_alphabetical_returns_Yorker_Moxham_last" />

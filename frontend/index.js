@@ -1,5 +1,6 @@
 const tableName = "Search Results";
 const noResultsMessageText = "No results found. Please try a different search.";
+const rowNumberCellText = "Row Number";
 const userIdCellText = "User ID";
 const nameCellText = "Name";
 const phoneNumberCellText = "Phone Number";
@@ -75,6 +76,8 @@ function loadUsers() {
 
             const searchResults = document.getElementById("users");
 
+            let i = 1;
+
             // If table already exists, remove it.
             if (document.getElementById("user-table")) {
                 const table = document.getElementById("user-table");
@@ -93,7 +96,7 @@ function loadUsers() {
                 searchResults.removeChild(noResultsMessage);
             }
 
-            //Create h2
+            //Create "Search Results" heading
             const tableTitle = document.createElement('h2');
             tableTitle.setAttribute("id", "table-title");
             tableTitle.innerText = tableName;
@@ -121,6 +124,11 @@ function loadUsers() {
                 const tableHeadRow = document.createElement('tr');
                 tableHead.appendChild(tableHeadRow);
 
+                //Create rowNumber column thead cell
+                const rowNumberCell = document.createElement('td');
+                rowNumberCell.innerText = rowNumberCellText;
+                tableHeadRow.appendChild(rowNumberCell);
+
                 //Create userId column thead cell
                 const userIdCell = document.createElement('td');
                 userIdCell.innerText = userIdCellText;
@@ -144,6 +152,11 @@ function loadUsers() {
                 users.forEach((user) => {
                     const row = document.createElement('tr');
                     tableBody.appendChild(row);
+
+                    const rowNumber = document.createElement('td');
+                    rowNumber.innerText = i;
+                    row.appendChild(rowNumber);
+                    i++;
 
                     const userIdData = document.createElement('td');
                     userIdData.innerText = user.userId;
