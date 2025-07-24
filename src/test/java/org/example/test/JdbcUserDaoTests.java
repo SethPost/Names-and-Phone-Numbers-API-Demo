@@ -1,165 +1,154 @@
 package org.example.test;
 
 import org.example.dao.JdbcUserDao;
-import org.example.exception.PageSizeOrPageNumberInvalidException;
 import org.example.model.User;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
-import java.sql.SQLException;
 import java.util.List;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.example.util.CommonValues.ALPHABETICAL_SORT;
+import static org.example.util.CommonValues.DEFAULT_PAGE_NUMBER;
+import static org.example.util.CommonValues.DEFAULT_PAGE_SIZE;
+import static org.example.util.CommonValues.EMPTY_STRING;
+import static org.example.util.CommonValues.REVERSE_ALPHABETICAL_SORT;
 
 public class JdbcUserDaoTests extends BaseDaoTests {
 
-    private JdbcUserDao sut;
+    private JdbcUserDao jdbcUserDao;
 
     @Before
-    public void setup() throws SQLException {
-        sut = new JdbcUserDao(dataSource);
+    public void setup() {
+        jdbcUserDao = new JdbcUserDao(dataSource);
     }
 
     @Test
-    public void getUsers_no_params_gets_51_users() {
-        int databaseSize = 51;
-        int result = sut.getUsers("", "").size();
+    public void getUsers_get_all_rows() {
+        int databaseSize = 202;
+        int absurdlyLargePageSize = 9999;
+        List<User> result = jdbcUserDao.getUsers(EMPTY_STRING, EMPTY_STRING, absurdlyLargePageSize, DEFAULT_PAGE_NUMBER);
 
-        Assert.assertEquals(databaseSize, result);
+        assertThat(result).hasSize(databaseSize);
     }
 
     @Test
     public void getUsers_search_seth_gets_1_result() {
-        int result = sut.getUsers("seth","").size();
+        List<User> result = jdbcUserDao.getUsers("seth", EMPTY_STRING, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
 
-        Assert.assertEquals(1, result);
+        assertThat(result).hasSize(1);
     }
 
     @Test
-    public void getUsers_search_ll_gets_13_results() {
-        int result = sut.getUsers("ll", "").size();
+    public void getUsers_search_ll_gets_46_results() {
+        List<User> result = jdbcUserDao.getUsers("ll", EMPTY_STRING, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
 
-        Assert.assertEquals(13, result);
+        assertThat(result).hasSize(46);
     }
 
     @Test
     public void getUsers_no_sortIndication_returns_Seth_Post_first() {
-        User resultUser = sut.getUsers("", "").get(0);
+        User resultUser = jdbcUserDao.getUsers(EMPTY_STRING, EMPTY_STRING, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER).get(0);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Seth Post", resultUserName);
+        assertThat(resultUserName).isEqualTo("Seth Post");
     }
 
     @Test
-    public void getUsers_nonsense_sortIndication_returns_Allina_Sayle_last() {
-        List<User> users = sut.getUsers("", "as;dlfkj");
+    public void getUsers_nonsense_sortIndication_returns_Ellary_Castlake_last() {
+        List<User> users = jdbcUserDao.getUsers(EMPTY_STRING, "as;dlfkj", DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
         User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Allina Sayle", resultUserName);
+        assertThat(resultUserName).isEqualTo("Ellary Castlake");
     }
 
     @Test
-    public void getUsers_alphabetical_returns_Addy_Littrik_first() {
-        User resultUser = sut.getUsers("", "Alphabetical").get(0);
+    public void getUsers_alphabetical_returns_Aaron_Dragonette_first() {
+        User resultUser = jdbcUserDao.getUsers(EMPTY_STRING, ALPHABETICAL_SORT, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER).get(0);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Addy Littrik", resultUserName);
+        assertThat(resultUserName).isEqualTo("Aaron Dragonette");
     }
 
     @Test
-    public void getUsers_alphabetical_returns_Yorker_Moxham_last() {
-        List<User> users = sut.getUsers("", "Alphabetical");
+    public void getUsers_alphabetical_returns_Eberhard_Hasted_last() {
+        List<User> users = jdbcUserDao.getUsers(EMPTY_STRING, ALPHABETICAL_SORT, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
         User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Yorker Moxham", resultUserName);
+        assertThat(resultUserName).isEqualTo("Eberhard Hasted");
     }
 
     @Test
-    public void getUsers_reverse_alphabetical_returns_Yorker_Moxham_first() {
-        User resultUser = sut.getUsers("", "Reverse Alphabetical").get(0);
+    public void getUsers_reverse_alphabetical_returns_Zaccaria_Alf_first() {
+        User resultUser = jdbcUserDao.getUsers(EMPTY_STRING, REVERSE_ALPHABETICAL_SORT, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER).get(0);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Yorker Moxham", resultUserName);
+        assertThat(resultUserName).isEqualTo("Zaccaria Alf");
     }
 
     @Test
-    public void getUsers_reverse_alphabetical_returns_Addy_Littrik_last() {
-        List<User> users = sut.getUsers("", "Reverse Alphabetical");
+    public void getUsers_reverse_alphabetical_returns_Percival_Vequaud_last() {
+        List<User> users = jdbcUserDao.getUsers(EMPTY_STRING, REVERSE_ALPHABETICAL_SORT, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
         User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Addy Littrik", resultUserName);
+        assertThat(resultUserName).isEqualTo("Percival Vequaud");
     }
 
     @Test
-    public void getUsers_search_s_alphabetical_returns_Allina_Sayle_first() {
-        User resultUser = sut.getUsers("s", "Alphabetical").get(0);
+    public void getUsers_search_s_alphabetical_returns_Adriaens_Sarchwel_first() {
+        User resultUser = jdbcUserDao.getUsers("s", ALPHABETICAL_SORT, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER).get(0);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Allina Sayle", resultUserName);
+        assertThat(resultUserName).isEqualTo("Adriaens Sarchwell");
     }
 
     @Test
-    public void getUsers_search_s_alphabetical_returns_Willow_Rosekilly_last() {
-        List<User> users = sut.getUsers("s", "Alphabetical");
+    public void getUsers_search_s_alphabetical_returns_Lea_Bushell_last() {
+        List<User> users = jdbcUserDao.getUsers("s", ALPHABETICAL_SORT, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
         User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Willow Rosekilly", resultUserName);
+        assertThat(resultUserName).isEqualTo("Lea Bushell");
     }
 
     @Test
     public void getUsers_search_s_reverse_alphabetical_returns_Willow_Rosekilly_first() {
-        User resultUser = sut.getUsers("s", "Reverse Alphabetical").get(0);
+        User resultUser = jdbcUserDao.getUsers("s", REVERSE_ALPHABETICAL_SORT, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER).get(0);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Willow Rosekilly", resultUserName);
+        assertThat(resultUserName).isEqualTo("Willow Rosekilly");
     }
 
     @Test
-    public void getUsers_search_s_reverse_alphabetical_returns_Allina_Sayle_last() {
-        List<User> users = sut.getUsers("s", "Reverse Alphabetical");
+    public void getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last() {
+        List<User> users = jdbcUserDao.getUsers("s", REVERSE_ALPHABETICAL_SORT, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
         User resultUser = users.get(users.size() - 1);
         String resultUserName = resultUser.getName();
 
-        Assert.assertEquals("Allina Sayle", resultUserName);
+        assertThat(resultUserName).isEqualTo("Lea Bushell");
     }
 
     @Test
-    public void paginateResults_max_page_size_is_50() throws PageSizeOrPageNumberInvalidException {
-        List<User> allUsers = sut.getUsers("", "");
-        List<List<User>> paginatedList = sut.paginateResults(allUsers, 51);
+    public void getUsers_pageSize_0() {
+        List<User> result = jdbcUserDao.getUsers(EMPTY_STRING, EMPTY_STRING, 0, DEFAULT_PAGE_NUMBER);
 
-        Assert.assertEquals(2, paginatedList.size());
+        assertThat(result).hasSize(0);
     }
 
     @Test
-    public void paginateResults_min_page_size_is_1() throws PageSizeOrPageNumberInvalidException {
-        List<User> allUsers = sut.getUsers("", "");
-        List<List<User>> paginatedList = sut.paginateResults(allUsers, 0);
+    public void getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Ansel_Pinilla_first() {
+        User resultUser = jdbcUserDao.getUsers("s", ALPHABETICAL_SORT, 4, 2).get(0);
+        String resultUserName = resultUser.getName();
 
-        Assert.assertEquals(51, paginatedList.size());
+        assertThat(resultUserName).isEqualTo("Ansel Pinilla");
     }
 
     @Test
-    public void getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Christoph_Bengough_first() throws PageSizeOrPageNumberInvalidException {
-        List<User> users = sut.getUsers("s", "Alphabetical");
-        List<List<User>> paginatedList = sut.paginateResults(users, 4);
-        List<User> pageTwo = sut.getPage(paginatedList, 2);
-        User resultUser = pageTwo.get(0);
-        String resultName = resultUser.getName();
+    public void getPage_pageSize_50_pageNumber_5_returns_only_2_results() {
+        List<User> result = jdbcUserDao.getUsers(EMPTY_STRING, EMPTY_STRING, DEFAULT_PAGE_SIZE, 5);
 
-        Assert.assertEquals("Christoph Bengough", resultName);
-    }
-
-    @Test
-    public void getPage_pageSize_51_pageNumber_3_returns_Allina_Sayle_only() throws PageSizeOrPageNumberInvalidException {
-        List<User> users = sut.getUsers("", "");
-        List<List<User>> paginatedList = sut.paginateResults(users, 51);
-        List<User> lastPage = sut.getPage(paginatedList, 3);
-        User resultUser = lastPage.get(0);
-        String resultName = resultUser.getName();
-
-        Assert.assertEquals("Allina Sayle", resultName);
+        assertThat(result).hasSize(2);
     }
 }

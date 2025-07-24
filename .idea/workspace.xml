@@ -4,11 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="Some refactoring and updates to application.properties after revisiting project">
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/CommonValues.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/create.sh" beforeDir="false" afterPath="$PROJECT_DIR$/database/create.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/BaseDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/BaseDaoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,24 +36,27 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "SethPost"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;SethPost&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SethPost/Interview-API-Demo.git",
-    "accountId": "d7aed965-84ba-41ca-8d25-7b54afc01150"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SethPost/Interview-API-Demo.git&quot;,
+    &quot;accountId&quot;: &quot;d7aed965-84ba-41ca-8d25-7b54afc01150&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2FlVOHhBlVPGz3sgBQwj7EjRPrz" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -51,7 +64,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Application.Application.executor": "Run",
+    "Application.Application.executor": "Debug",
+    "JUnit.JdbcUserDaoTests.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getPage_pageSize_50_pageNumber_5_returns_only_2_results.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Ansel_Pinilla_first.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_alphabetical_returns_Aaron_Dragonette_first.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_alphabetical_returns_Eberhard_Hasted_last.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_get_all_rows.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_nonsense_sortIndication_returns_Ellary_Castlake_last.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_reverse_alphabetical_returns_Percival_Vequaud_last.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_reverse_alphabetical_returns_Zaccaria_Alf_first.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_search_ll_gets_13_results.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_search_s_alphabetical_returns_Adriaens_Sarchwel_first.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_search_s_alphabetical_returns_Lea_Bushell_last.executor": "Run",
+    "JUnit.JdbcUserDaoTests.getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
@@ -60,10 +86,10 @@
     "SHELLCHECK.PATH": "/Users/sethpost/Library/Application Support/JetBrains/IdeaIC2025.1/plugins/Shell Script/shellcheck",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/posts/workspace/seth-post-student-code/TE_Exercises/module-1/17_File_IO_Writing/lecture-final",
-    "project.structure.last.edited": "Global Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings"
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -76,20 +102,7 @@
       <recent name="C:\Users\posts\workspace\OCLC Interview API Demo Project\OCLC -Interview-API-Demo-Project\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
-      <module name="OCLC-Interview-API-Demo-Project" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.JdbcUserDaoTests">
     <configuration name="JdbcUserDaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
@@ -97,20 +110,15 @@
           <option name="PATTERN" value="org.example.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getUsers_alphabetical_returns_Yorker_Moxham_last" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcUserDaoTests.getPage_pageSize_50_pageNumber_5_returns_only_2_results" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
@@ -120,13 +128,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getUsers_alphabetical_returns_Yorker_Moxham_last" />
+      <option name="METHOD_NAME" value="getPage_pageSize_50_pageNumber_5_returns_only_2_results" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getUsers_reverse_alphabetical_returns_Addy_Littrik_last" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcUserDaoTests.getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Ansel_Pinilla_first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
@@ -136,13 +144,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getUsers_reverse_alphabetical_returns_Addy_Littrik_last" />
+      <option name="METHOD_NAME" value="getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Ansel_Pinilla_first" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getUsers_search_seth_gets_1_result" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="JdbcUserDaoTests.getUsers_search_s_alphabetical_returns_Lea_Bushell_last" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
@@ -152,7 +160,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.test" />
       <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getUsers_search_seth_gets_1_result" />
+      <option name="METHOD_NAME" value="getUsers_search_s_alphabetical_returns_Lea_Bushell_last" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcUserDaoTests.getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="OCLC-Interview-API-Demo-Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.test" />
+      <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
+      <option name="METHOD_NAME" value="getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
         <item itemvalue="JUnit.JdbcUserDaoTests" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_reverse_alphabetical_returns_Addy_Littrik_last" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_search_seth_gets_1_result" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_alphabetical_returns_Yorker_Moxham_last" />
+        <item itemvalue="JUnit.JdbcUserDaoTests.getPage_pageSize_50_pageNumber_5_returns_only_2_results" />
+        <item itemvalue="JUnit.JdbcUserDaoTests.getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Ansel_Pinilla_first" />
+        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last" />
+        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_search_s_alphabetical_returns_Lea_Bushell_last" />
       </list>
     </recent_temporary>
   </component>
@@ -177,6 +201,15 @@
       <option name="presentableId" value="Default" />
       <updated>1665066626192</updated>
     </task>
+    <task id="LOCAL-00001" summary="Some refactoring and updates to application.properties after revisiting project">
+      <option name="closed" value="true" />
+      <created>1753375592874</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1753375592874</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +227,44 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
+    <MESSAGE value="Some refactoring and updates to application.properties after revisiting project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Some refactoring and updates to application.properties after revisiting project" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java</url>
+          <line>36</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/service/UserService.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/OCLC_Interview_API_Demo_Project$Application.ic" NAME="Application Coverage Results" MODIFIED="1665244270144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

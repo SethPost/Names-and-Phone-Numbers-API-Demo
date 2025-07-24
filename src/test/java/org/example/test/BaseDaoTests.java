@@ -9,8 +9,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 
-// This class is used to ensure that JdbcUserDaoTests can run.
-
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = TestingDatabaseConfig.class)
 public abstract class BaseDaoTests {

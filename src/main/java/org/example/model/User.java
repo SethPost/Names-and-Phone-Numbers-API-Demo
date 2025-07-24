@@ -1,7 +1,5 @@
 package org.example.model;
 
-
-
 public class User {
 
     private int userId;
@@ -14,10 +12,8 @@ public class User {
         this.phoneNumber = phoneNumber;
     }
 
-    //Empty constructor, just in case
     public User() {}
 
-    //Getters and Setters
     public int getUserId() {
         return userId;
     }

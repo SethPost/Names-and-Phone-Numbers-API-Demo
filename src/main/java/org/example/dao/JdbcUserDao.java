@@ -1,6 +1,5 @@
 package org.example.dao;
 
-import org.example.exception.PageSizeOrPageNumberInvalidException;
 import org.example.model.User;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.support.rowset.SqlRowSet;
@@ -9,6 +8,19 @@ import org.springframework.stereotype.Component;
 import javax.sql.DataSource;
 import java.util.List;
 import java.util.ArrayList;
+
+import static org.example.util.CommonValues.ALPHABETICAL_SORT;
+import static org.example.util.CommonValues.ASC;
+import static org.example.util.CommonValues.DESC;
+import static org.example.util.CommonValues.LIMIT_STATEMENT;
+import static org.example.util.CommonValues.NAME;
+import static org.example.util.CommonValues.OFFSET_STATEMENT;
+import static org.example.util.CommonValues.ORDER_BY_STATEMENT;
+import static org.example.util.CommonValues.PHONE_NUMBER;
+import static org.example.util.CommonValues.REVERSE_ALPHABETICAL_SORT;
+import static org.example.util.CommonValues.SELECT_STATEMENT;
+import static org.example.util.CommonValues.USER_ID;
+import static org.example.util.CommonValues.WHERE_STATEMENT;
 
 @Component
 public class JdbcUserDao implements UserDao {
@@ -20,47 +32,13 @@ public class JdbcUserDao implements UserDao {
     }
 
     @Override
-    public List<User> getUsers(String searchQuery, String sortIndication) {
+    public List<User> getUsers(String searchQuery, String sortIndication, int pageSize, int pageNumber) {
 
-        // Declare the list we will ultimately return.
         List<User> users = new ArrayList<>();
 
-        // Starter sql statement that we will add onto depending on the search parameters provided.
-        String sql = "Select user_id, name, phone_number FROM users";
+        String sqlQuery = buildSqlQuery(searchQuery, sortIndication, pageSize, pageNumber);
 
-        // If both a searchQuery and sortIndication are provided
-        if (searchQuery != null && sortIndication != null) {
-
-            // If sortIndication is alphabetical
-            if (sortIndication.equals("Alphabetical")) {
-                sql += " WHERE name ILIKE '%" + searchQuery + "%' ORDER BY name ASC";
-
-            // If sortIndication is reverse alphabetical
-            } else if (sortIndication.equals("Reverse Alphabetical")) {
-                sql += " WHERE name ILIKE '%" + searchQuery + "%' ORDER BY name DESC";
-
-            /* If a sortIndication is provided but doesn't match "Alphabetical"
-            or "Reverse Alphabetical", results will be sorted by default (entry number) */
-            } else {
-                sql += " WHERE name ILIKE '%" + searchQuery + "%'";
-            }
-
-        // If only a searchQuery is provided, no sortIndication
-        } else if (searchQuery != null) {
-            sql += " WHERE name ILIKE '%" + searchQuery + "%'";
-
-        // If only sortIndication is provided, no searchQuery
-        } else if (sortIndication != null) {
-            if (sortIndication.equals("Alphabetical")) {
-                sql += " ORDER BY name ASC";
-            } else if (sortIndication.equals("Reverse Alphabetical")) {
-                sql += " ORDER BY name DESC";
-            }
-        }
-
-        /* Map results of database search to User model, add each one
-         to the users list we declared at start of method. */
-        SqlRowSet results = jdbcTemplate.queryForRowSet(sql);
+        SqlRowSet results = jdbcTemplate.queryForRowSet(sqlQuery);
         while (results.next()) {
             User user = mapRowToUser(results);
             users.add(user);
@@ -68,66 +46,44 @@ public class JdbcUserDao implements UserDao {
         return users;
     }
 
-    //This method takes a list and paginates it by the number of users per page provided.
-    @Override
-    public List<List<User>> paginateResults(List<User> users, int pageSize) throws PageSizeOrPageNumberInvalidException {
+    private String buildSqlQuery(String searchQuery, String sortIndication, int pageSize, int pageNumber) {
+        StringBuilder sqlQuery = new StringBuilder(SELECT_STATEMENT);
 
-        // Initialize an empty list of pages (or list of lists of users)
-        List<List<User>> pages = new ArrayList<>();
-
-        // Make sure pageSize is not more than 50, less than 1, or not a number.
-        if (pageSize > 50) {
-            pageSize = 50;
-        } else if (pageSize < 1) {
-            pageSize = 1;
-        }
-        else if (pageSize >= 1 || pageSize <= 0) {
-            pageSize += 0;
-        } else {
-            throw new PageSizeOrPageNumberInvalidException();
+        if (!searchQuery.isBlank()) {
+            String whereClause = String.format(WHERE_STATEMENT, searchQuery);
+            sqlQuery.append(whereClause);
         }
 
-        // Setting up the first loop. The iterator increases by pageSize so that each list does not overlap.
-        for (int i = 0; i < users.size(); i += pageSize) {
-
-            // Initialize an empty list of users at the start of each page (every time the first loop starts again).
-            List<User> pageOfUsers = new ArrayList<>();
-
-            /* The second loop starts at the beginning of each new 'page' (indicated by 'i')
-             It adds users to the current page until the end of the page is reached
-             OR the end of the users list is reached. */
-            for (int j = i; (j < i + pageSize) && (j < users.size()); j++) {
-                pageOfUsers.add(users.get(j));
-            }
-
-            // Adding the 'page' created by the second loop to our list of pages before starting on the next page.
-            pages.add(pageOfUsers);
+        if (ALPHABETICAL_SORT.equals(sortIndication)) {
+            String orderByClause = String.format(ORDER_BY_STATEMENT, ASC);
+            sqlQuery.append(orderByClause);
         }
-        return pages;
+
+        if (REVERSE_ALPHABETICAL_SORT.equals(sortIndication)) {
+            String orderByClause = String.format(ORDER_BY_STATEMENT, DESC);
+            sqlQuery.append(orderByClause);
+        }
+
+        String limitClause = String.format(LIMIT_STATEMENT, pageSize);
+        sqlQuery.append(limitClause);
+
+        int offset = calculateOffset(pageSize, pageNumber);
+        String offsetClause = String.format(OFFSET_STATEMENT, offset);
+        sqlQuery.append(offsetClause);
+
+        return sqlQuery.toString();
     }
 
-    //This method takes a list of pages and returns the one indicated by pageNumber.
-    @Override
-    public List<User> getPage(List<List<User>> users, int pageNumber) throws PageSizeOrPageNumberInvalidException {
-
-        // Check that the pageNumber requested is not greater than the pages returned.
-        if (pageNumber > users.size()) {
-            pageNumber = users.size();
-        } else if (pageNumber < 1) {
-            pageNumber = 1;
-        } else if (pageNumber >= 1 || pageNumber <= users.size()) {
-            pageNumber += 0;
-        } else {
-            throw new PageSizeOrPageNumberInvalidException();
-        }
-        return users.get(pageNumber - 1);
+    private int calculateOffset(int pageSize, int pageNumber) {
+        int indexNumber = pageNumber - 1;
+        return indexNumber * pageSize;
     }
 
     private User mapRowToUser(SqlRowSet rowSet) {
         User user = new User();
-        user.setUserId(rowSet.getInt("user_id"));
-        user.setName(rowSet.getString("name"));
-        user.setPhoneNumber(rowSet.getString("phone_number"));
+        user.setUserId(rowSet.getInt(USER_ID));
+        user.setName(rowSet.getString(NAME));
+        user.setPhoneNumber(rowSet.getString(PHONE_NUMBER));
         return user;
     }
 }
