@@ -4,14 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="Total rework of dao and business logic -- adding service class, moving pagination to SQL call, updating tests, adding util class, removing unnecessary comments">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/controller/UserControllerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/service/UserServiceTest.java" afterDir="false" />
+    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="Refactoring project name">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/BaseDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dao/BaseDaoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dao/JdbcUserDaoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/TestingDatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dao/TestingDatabaseConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Interview-Api-Project-Planning.excalidraw" beforeDir="false" afterPath="$PROJECT_DIR$/Interview-Api-Project-Planning.excalidraw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,12 +33,12 @@
     &quot;assignee&quot;: &quot;SethPost&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/SethPost/Interview-API-Demo.git&quot;,
-    &quot;accountId&quot;: &quot;d7aed965-84ba-41ca-8d25-7b54afc01150&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/SethPost/Names-and-Phone-Numbers-API-Demo",
+    "accountId": "d7aed965-84ba-41ca-8d25-7b54afc01150"
   }
-}</component>
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -109,13 +107,13 @@
   <component name="RunManager" selected="Application.restapi">
     <configuration name="restapi" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Application" />
-      <module name="OCLC-Interview-API-Demo-Project" />
+      <module name="Names-and-Phone-Numbers-API-Demo" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OCLC-Interview-API-Demo-Project" />
+      <module name="Names-and-Phone-Numbers-API-Demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.controller.*" />
@@ -130,7 +128,7 @@
       </method>
     </configuration>
     <configuration name="UserControllerTest.testGetUsers_withParams_returns200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OCLC-Interview-API-Demo-Project" />
+      <module name="Names-and-Phone-Numbers-API-Demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.controller.*" />
@@ -146,7 +144,7 @@
       </method>
     </configuration>
     <configuration name="UserServiceTest.testGetUsers_page_number_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OCLC-Interview-API-Demo-Project" />
+      <module name="Names-and-Phone-Numbers-API-Demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.service.*" />
@@ -162,7 +160,7 @@
       </method>
     </configuration>
     <configuration name="UserServiceTest.testGetUsers_page_size_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OCLC-Interview-API-Demo-Project" />
+      <module name="Names-and-Phone-Numbers-API-Demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.service.*" />
@@ -178,7 +176,7 @@
       </method>
     </configuration>
     <configuration name="UserServiceTest.testGetUsers_page_size_negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="OCLC-Interview-API-Demo-Project" />
+      <module name="Names-and-Phone-Numbers-API-Demo" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="org.example.service.*" />
@@ -192,6 +190,17 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Names-and-Phone-Numbers-API-Demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Names-and-Phone-Numbers-API-Demo" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.restapi" />
@@ -236,7 +245,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753392652343</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Adding unit tests for UserService and UserController">
+      <option name="closed" value="true" />
+      <created>1753465598733</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1753465598733</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -256,7 +273,9 @@
     </ignored-roots>
     <MESSAGE value="Some refactoring and updates to application.properties after revisiting project" />
     <MESSAGE value="Total rework of dao and business logic -- adding service class, moving pagination to SQL call, updating tests, adding util class, removing unnecessary comments" />
-    <option name="LAST_COMMIT_MESSAGE" value="Total rework of dao and business logic -- adding service class, moving pagination to SQL call, updating tests, adding util class, removing unnecessary comments" />
+    <MESSAGE value="Adding unit tests for UserService and UserController" />
+    <MESSAGE value="Refactoring project name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring project name" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

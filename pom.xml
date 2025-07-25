@@ -9,7 +9,7 @@
     <relativePath/> <!-- lookup parent from repository -->
 </parent>
 <groupId>org.example</groupId>
-<artifactId>OCLC-Interview-API-Demo-Project</artifactId>
+<artifactId>Names-and-Phone-Numbers-API-Demo</artifactId>
 <version>0.0.1-SNAPSHOT</version>
 
 <properties>

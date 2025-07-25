@@ -1,4 +1,4 @@
-SETH POST - OCLC INTERVIEW API PROJECT
+SETH POST - USERS AND PHONE NUMBERS API DEMO
 
 *Overview*
 This API can be used to search through a database of 202 users.
