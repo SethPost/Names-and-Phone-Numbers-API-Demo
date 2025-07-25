@@ -5,7 +5,7 @@ This API can be used to search through a database of 202 users.
 
 Each user has a User ID, a Name, and a Phone Number.
 
-The API endpoint is http://localhost:8080/users.
+The API endpoint is {hostname:port}/users.
 
 The API endpoint accepts GET requests and the following search parameters:
 
