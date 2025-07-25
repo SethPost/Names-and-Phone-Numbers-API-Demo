@@ -1,9 +1,8 @@
-package org.example.test;
+package org.example.dao;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.SingleConnectionDataSource;
 import org.springframework.jdbc.datasource.init.ScriptUtils;
@@ -13,8 +12,6 @@ import javax.annotation.PreDestroy;
 import javax.sql.DataSource;
 import java.sql.SQLException;
 import java.util.Objects;
-
-// This class is used to configure a test database for the JdbcUserDaoTests.
 
 @Configuration
 public class TestingDatabaseConfig {

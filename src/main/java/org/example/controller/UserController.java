@@ -1,6 +1,5 @@
 package org.example.controller;
 
-import org.example.exception.PageSizeOrPageNumberInvalidException;
 import org.example.logging.Logger;
 import org.example.model.User;
 import org.example.service.UserService;
@@ -25,7 +24,7 @@ public class UserController {
     @PreAuthorize("permitAll")
     @GetMapping("/users")
     public List<User> getUsers(@RequestParam(required = false) String searchQuery, @RequestParam(required = false) String sortIndication,
-                               @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) throws PageSizeOrPageNumberInvalidException {
+                               @RequestParam(defaultValue = "50") int pageSize, @RequestParam(defaultValue = "1") int pageNumber) {
 
         Logger logger = new Logger();
         logger.logSearch(searchQuery, sortIndication, pageSize, pageNumber);

@@ -1,4 +1,4 @@
-package org.example.test;
+package org.example.dao;
 
 import org.junit.After;
 import org.junit.runner.RunWith;

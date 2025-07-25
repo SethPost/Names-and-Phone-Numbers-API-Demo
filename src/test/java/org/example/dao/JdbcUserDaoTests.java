@@ -1,6 +1,5 @@
-package org.example.test;
+package org.example.dao;
 
-import org.example.dao.JdbcUserDao;
 import org.example.model.User;
 import org.junit.Before;
 import org.junit.Test;

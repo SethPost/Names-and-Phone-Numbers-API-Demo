@@ -4,21 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="Some refactoring and updates to application.properties after revisiting project">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/util/CommonValues.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="Total rework of dao and business logic -- adding service class, moving pagination to SQL call, updating tests, adding util class, removing unnecessary comments">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/controller/UserControllerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/data.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/JdbcUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/BaseDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/BaseDaoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/test-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/test-data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/BaseDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dao/BaseDaoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dao/JdbcUserDaoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/test/TestingDatabaseConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/dao/TestingDatabaseConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,6 +71,14 @@
     "JUnit.JdbcUserDaoTests.getUsers_search_s_alphabetical_returns_Adriaens_Sarchwel_first.executor": "Run",
     "JUnit.JdbcUserDaoTests.getUsers_search_s_alphabetical_returns_Lea_Bushell_last.executor": "Run",
     "JUnit.JdbcUserDaoTests.getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
+    "JUnit.UserControllerTest.testGetUsers_withParams_returns200.executor": "Debug",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.UserServiceTest.testGetUsers.executor": "Run",
+    "JUnit.UserServiceTest.testGetUsers_page_number_0.executor": "Run",
+    "JUnit.UserServiceTest.testGetUsers_page_size_0.executor": "Run",
+    "JUnit.UserServiceTest.testGetUsers_page_size_51.executor": "Run",
+    "JUnit.UserServiceTest.testGetUsers_page_size_negative.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
@@ -101,94 +102,112 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\posts\workspace\OCLC Interview API Demo Project\OCLC -Interview-API-Demo-Project\database" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.dao" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.JdbcUserDaoTests">
-    <configuration name="JdbcUserDaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.restapi">
+    <configuration name="restapi" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="org.example.Application" />
+      <module name="OCLC-Interview-API-Demo-Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
+          <option name="PATTERN" value="org.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
+      <option name="PACKAGE_NAME" value="org.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.example.controller.UserControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getPage_pageSize_50_pageNumber_5_returns_only_2_results" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTest.testGetUsers_withParams_returns200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
+          <option name="PATTERN" value="org.example.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getPage_pageSize_50_pageNumber_5_returns_only_2_results" />
+      <option name="PACKAGE_NAME" value="org.example.controller" />
+      <option name="MAIN_CLASS_NAME" value="org.example.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="testGetUsers_withParams_returns200" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Ansel_Pinilla_first" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.testGetUsers_page_number_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
+          <option name="PATTERN" value="org.example.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Ansel_Pinilla_first" />
+      <option name="PACKAGE_NAME" value="org.example.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="testGetUsers_page_number_0" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getUsers_search_s_alphabetical_returns_Lea_Bushell_last" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.testGetUsers_page_size_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
+          <option name="PATTERN" value="org.example.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getUsers_search_s_alphabetical_returns_Lea_Bushell_last" />
+      <option name="PACKAGE_NAME" value="org.example.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="testGetUsers_page_size_0" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JdbcUserDaoTests.getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UserServiceTest.testGetUsers_page_size_negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="OCLC-Interview-API-Demo-Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.test.*" />
+          <option name="PATTERN" value="org.example.service.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.test" />
-      <option name="MAIN_CLASS_NAME" value="org.example.test.JdbcUserDaoTests" />
-      <option name="METHOD_NAME" value="getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last" />
+      <option name="PACKAGE_NAME" value="org.example.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="testGetUsers_page_size_negative" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.restapi" />
+      <item itemvalue="JUnit.UserControllerTest" />
+      <item itemvalue="JUnit.UserControllerTest.testGetUsers_withParams_returns200" />
+      <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_number_0" />
+      <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_size_0" />
+      <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_size_negative" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.JdbcUserDaoTests" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getPage_pageSize_50_pageNumber_5_returns_only_2_results" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getPage_search_s_alphabetical_pageSize_4_pageNumber_2_returns_Ansel_Pinilla_first" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_search_s_reverse_alphabetical_returns_Lea_Bushell_last" />
-        <item itemvalue="JUnit.JdbcUserDaoTests.getUsers_search_s_alphabetical_returns_Lea_Bushell_last" />
+        <item itemvalue="JUnit.UserControllerTest.testGetUsers_withParams_returns200" />
+        <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_number_0" />
+        <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_size_negative" />
+        <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_size_0" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +228,15 @@
       <option name="project" value="LOCAL" />
       <updated>1753375592874</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Total rework of dao and business logic -- adding service class, moving pagination to SQL call, updating tests, adding util class, removing unnecessary comments">
+      <option name="closed" value="true" />
+      <created>1753392652343</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753392652343</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,14 +255,15 @@
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
     <MESSAGE value="Some refactoring and updates to application.properties after revisiting project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Some refactoring and updates to application.properties after revisiting project" />
+    <MESSAGE value="Total rework of dao and business logic -- adding service class, moving pagination to SQL call, updating tests, adding util class, removing unnecessary comments" />
+    <option name="LAST_COMMIT_MESSAGE" value="Total rework of dao and business logic -- adding service class, moving pagination to SQL call, updating tests, adding util class, removing unnecessary comments" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java</url>
-          <line>29</line>
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/dao/JdbcUserDaoTests.java</url>
+          <line>28</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -249,8 +277,8 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/test/JdbcUserDaoTests.java</url>
-          <line>31</line>
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/dao/JdbcUserDaoTests.java</url>
+          <line>30</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -260,8 +288,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/org/example/controller/UserController.java</url>
-          <line>32</line>
+          <line>31</line>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/controller/UserControllerTest.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
