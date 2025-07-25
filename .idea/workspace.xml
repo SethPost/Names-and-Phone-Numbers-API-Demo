@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="Refactoring project name">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Interview-Api-Project-Planning.excalidraw" beforeDir="false" afterPath="$PROJECT_DIR$/Interview-Api-Project-Planning.excalidraw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.txt" beforeDir="false" afterPath="$PROJECT_DIR$/README.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="More refactoring" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -33,12 +27,12 @@
     &quot;assignee&quot;: &quot;SethPost&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/SethPost/Names-and-Phone-Numbers-API-Demo",
-    "accountId": "d7aed965-84ba-41ca-8d25-7b54afc01150"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/SethPost/Names-and-Phone-Numbers-API-Demo&quot;,
+    &quot;accountId&quot;: &quot;d7aed965-84ba-41ca-8d25-7b54afc01150&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -84,7 +78,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "SHELLCHECK.PATH": "/Users/sethpost/Library/Application Support/JetBrains/IdeaIC2025.1/plugins/Shell Script/shellcheck",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Users/posts/workspace/seth-post-student-code/TE_Exercises/module-1/17_File_IO_Writing/lecture-final",
+    "last_opened_file_path": "/Users/sethpost/workspace/Names-and-Phone-Numbers-API-Demo",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -104,10 +98,25 @@
       <recent name="org.example.dao" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.restapi">
+  <component name="RunManager" selected="JUnit.JdbcUserDaoTests">
     <configuration name="restapi" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="org.example.Application" />
       <module name="Names-and-Phone-Numbers-API-Demo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JdbcUserDaoTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Names-and-Phone-Numbers-API-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.dao" />
+      <option name="MAIN_CLASS_NAME" value="org.example.dao.JdbcUserDaoTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -143,6 +152,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Names-and-Phone-Numbers-API-Demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.service" />
+      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceTest.testGetUsers_page_number_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Names-and-Phone-Numbers-API-Demo" />
       <extension name="coverage">
@@ -154,38 +178,6 @@
       <option name="PACKAGE_NAME" value="org.example.service" />
       <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
       <option name="METHOD_NAME" value="testGetUsers_page_number_0" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testGetUsers_page_size_0" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Names-and-Phone-Numbers-API-Demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testGetUsers_page_size_0" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserServiceTest.testGetUsers_page_size_negative" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Names-and-Phone-Numbers-API-Demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.service" />
-      <option name="MAIN_CLASS_NAME" value="org.example.service.UserServiceTest" />
-      <option name="METHOD_NAME" value="testGetUsers_page_size_negative" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -204,19 +196,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.restapi" />
+      <item itemvalue="JUnit.JdbcUserDaoTests" />
+      <item itemvalue="JUnit.UserServiceTest" />
       <item itemvalue="JUnit.UserControllerTest" />
       <item itemvalue="JUnit.UserControllerTest.testGetUsers_withParams_returns200" />
       <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_number_0" />
-      <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_size_0" />
-      <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_size_negative" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UserControllerTest.testGetUsers_withParams_returns200" />
+        <item itemvalue="JUnit.JdbcUserDaoTests" />
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="JUnit.UserControllerTest" />
+        <item itemvalue="JUnit.UserControllerTest.testGetUsers_withParams_returns200" />
         <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_number_0" />
-        <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_size_negative" />
-        <item itemvalue="JUnit.UserServiceTest.testGetUsers_page_size_0" />
       </list>
     </recent_temporary>
   </component>
@@ -253,7 +245,23 @@
       <option name="project" value="LOCAL" />
       <updated>1753465598733</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring project name">
+      <option name="closed" value="true" />
+      <created>1753466251481</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1753466251481</updated>
+    </task>
+    <task id="LOCAL-00005" summary="More refactoring">
+      <option name="closed" value="true" />
+      <created>1753466993299</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1753466993299</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -275,7 +283,8 @@
     <MESSAGE value="Total rework of dao and business logic -- adding service class, moving pagination to SQL call, updating tests, adding util class, removing unnecessary comments" />
     <MESSAGE value="Adding unit tests for UserService and UserController" />
     <MESSAGE value="Refactoring project name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring project name" />
+    <MESSAGE value="More refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="More refactoring" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
