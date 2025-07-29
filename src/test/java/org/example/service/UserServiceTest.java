@@ -42,6 +42,14 @@ public class UserServiceTest {
     }
 
     @Test
+    public void testGetUsers_null_values() {
+        List<User> mockResult = new ArrayList<>();
+        when(userDao.getUsers(null, null, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER)).thenReturn(mockResult);
+        List<User> result = userService.getUsers(null, null, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
+        verify(userDao, times(1)).getUsers(null, null, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
+    }
+
+    @Test
     public void testGetUsers_page_size_51() {
         when(userDao.getUsers(any(), any(), anyInt(), anyInt())).thenReturn(Collections.emptyList());
         userService.getUsers(EMPTY_STRING, EMPTY_STRING, DEFAULT_PAGE_SIZE + 1, DEFAULT_PAGE_NUMBER);

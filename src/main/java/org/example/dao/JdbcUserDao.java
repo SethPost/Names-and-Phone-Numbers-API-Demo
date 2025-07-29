@@ -49,7 +49,7 @@ public class JdbcUserDao implements UserDao {
     private String buildSqlQuery(String searchQuery, String sortIndication, int pageSize, int pageNumber) {
         StringBuilder sqlQuery = new StringBuilder(SELECT_STATEMENT);
 
-        if (!searchQuery.isBlank()) {
+        if (searchQuery != null) {
             String whereClause = String.format(WHERE_STATEMENT, searchQuery);
             sqlQuery.append(whereClause);
         }

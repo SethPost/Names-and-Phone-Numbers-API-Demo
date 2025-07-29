@@ -31,6 +31,13 @@ public class JdbcUserDaoTests extends BaseDaoTests {
     }
 
     @Test
+    public void getUsers_null_values() {
+        List<User> result = jdbcUserDao.getUsers(null, null, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
+
+        assertThat(result).hasSize(DEFAULT_PAGE_SIZE);
+    }
+    
+    @Test
     public void getUsers_search_seth_gets_1_result() {
         List<User> result = jdbcUserDao.getUsers("seth", EMPTY_STRING, DEFAULT_PAGE_SIZE, DEFAULT_PAGE_NUMBER);
 

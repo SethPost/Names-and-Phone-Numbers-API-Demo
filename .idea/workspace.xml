@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="More refactoring">
+    <list default="true" id="1f365dfd-5c26-48ee-866e-c9ea2aff326f" name="Changes" comment="Small update to README.txt">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/create.sh" beforeDir="false" afterPath="$PROJECT_DIR$/database/create.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -273,7 +272,31 @@
       <option name="project" value="LOCAL" />
       <updated>1753467220288</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Removing unnecessary line from create.sh">
+      <option name="closed" value="true" />
+      <created>1753467783998</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1753467783998</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding workspace.xml to .gitignore">
+      <option name="closed" value="true" />
+      <created>1753467866762</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1753467866762</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Small update to README.txt">
+      <option name="closed" value="true" />
+      <created>1753468017648</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1753468017648</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -296,7 +319,10 @@
     <MESSAGE value="Adding unit tests for UserService and UserController" />
     <MESSAGE value="Refactoring project name" />
     <MESSAGE value="More refactoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="More refactoring" />
+    <MESSAGE value="Removing unnecessary line from create.sh" />
+    <MESSAGE value="Adding workspace.xml to .gitignore" />
+    <MESSAGE value="Small update to README.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Small update to README.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
